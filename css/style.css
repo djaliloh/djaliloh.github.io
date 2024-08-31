@@ -97,7 +97,7 @@ header h1 {
   color: #0056b3;
 }
 
-.content {
+.content, .content-home {
   flex: 1;
   padding: 20px;
   background-color: #fff;
