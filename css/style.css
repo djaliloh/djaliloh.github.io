@@ -146,3 +146,12 @@ header h1 {
 .content article a:hover {
   text-decoration: underline;
 }
+
+.content-home a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.content-home a:hover {
+  text-decoration: underline;
+}
