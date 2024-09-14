@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #666;
+}
+
+.navbar ul li a:hover {
+  color: #0056b3;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-right: 20px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.sidebar p {
+  font-size: 14px;
+  color: #666;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  text-align: left;
+}
+
+.contact-info li {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info li i {
+  margin-right: 10px;
+  color: #0056b3;
+}
+
+.content, .content-home {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.content h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.content article {
+  margin-bottom: 30px;
+}
+
+.content article h4 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.content article h4 a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.content article p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.content article p strong {
+  font-weight: bold;
+}
+
+.content article a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.content article a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
