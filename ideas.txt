@@ -1,0 +1,68 @@
+### **Vision par Ordinateur (Computer Vision)**
+
+1. **Introduction à la Vision par Ordinateur : Concepts de Base et Applications**
+   - Un guide pour débutants sur ce qu'est la vision par ordinateur, ses applications courantes (reconnaissance d'objets, suivi d'objets, etc.) et ses défis.
+
+2. **Détection et Reconnaissance d'Objets en Temps Réel avec YOLO et OpenCV**
+   - Un tutoriel pratique sur l'utilisation de YOLO (You Only Look Once) et OpenCV pour la détection et la reconnaissance d'objets en temps réel.
+
+3. **Utilisation des Réseaux Neurones Convolutifs (CNN) pour la Classification d'Images**
+   - Explication de l'architecture des CNN, et comment ils sont utilisés pour la classification d'images, avec des exemples concrets.
+
+4. **Analyse de Sentiments à partir des Images : Une Introduction à l'Analyse d'Expressions Faciales**
+   - Comment utiliser des modèles de vision par ordinateur pour analyser les émotions et les sentiments à partir d'expressions faciales.
+
+5. **Vision par Ordinateur dans la Médecine : Détection des Maladies à partir des Images Médicales**
+   - Applications de la vision par ordinateur pour la détection précoce de maladies à partir d'images médicales, telles que les radiographies et les IRM.
+
+6. **Génération d'Images avec les Réseaux Antagonistes Génératifs (GANs)**
+   - Introduction aux GANs et comment ils peuvent être utilisés pour générer des images réalistes ou créer des œuvres d'art.
+
+7. **Amélioration d'Images avec les Réseaux Neurones Profonds : Techniques et Outils**
+   - Techniques pour améliorer la qualité des images (super-résolution, débruitage) en utilisant des réseaux neuronaux profonds.
+
+### **Traitement d'Images (Image Processing)**
+
+1. **Techniques Fondamentales du Traitement d'Images : De la Filtration à la Transformation de Fourier**
+   - Un aperçu des techniques fondamentales utilisées dans le traitement d'images, telles que les filtres, les transformations de Fourier et les méthodes de seuillage.
+
+2. **Segmentation d'Images : Méthodes Traditionnelles et Basées sur l'Apprentissage**
+   - Comparaison entre les méthodes de segmentation d'images traditionnelles et celles basées sur l'apprentissage machine.
+
+3. **Amélioration de la Qualité des Images : Techniques de Correction des Couleurs et d'Élimination du Bruit**
+   - Techniques pour améliorer la qualité des images, y compris la correction des couleurs et la réduction du bruit.
+
+4. **Traitement d'Images en Couleur vs. en Niveaux de Gris : Quand Utiliser Chaque Approche ?**
+   - Analyse des différences entre le traitement d'images en couleur et en niveaux de gris, et les cas d'utilisation pour chacun.
+
+5. **Applications de la Transformation de Hough pour la Détection de Formes Géométriques**
+   - Comment utiliser la transformation de Hough pour détecter des formes géométriques telles que des lignes et des cercles dans des images.
+
+### **Apprentissage Machine / Apprentissage Profond (ML/DL)**
+
+1. **Guide d'Introduction aux Réseaux Neurones : Comprendre les Perceptrons et les Architectures Profondes**
+   - Un guide pour les débutants sur les réseaux neuronaux, des perceptrons simples aux architectures profondes plus complexes.
+
+2. **Optimisation des Hyperparamètres dans les Modèles de Machine Learning : Techniques et Outils**
+   - Techniques pour optimiser les hyperparamètres des modèles d'apprentissage machine, y compris la recherche en grille et la recherche aléatoire.
+
+3. **Utilisation des Transformateurs pour le Traitement du Langage Naturel : Une Révolution dans le Deep Learning**
+   - Introduction aux modèles de transformateurs comme BERT et GPT, et leur impact sur le traitement du langage naturel.
+
+4. **L'Apprentissage Renforcé : Concepts de Base et Applications Pratiques**
+   - Explication des concepts d'apprentissage renforcé et comment ils sont utilisés pour des applications telles que les jeux et la robotique.
+
+5. **Détection d'Anomalies avec les Autoencodeurs : Applications dans la Sécurité et la Surveillance**
+   - Comment utiliser des autoencodeurs pour détecter des anomalies dans des ensembles de données, avec des applications dans la sécurité et la surveillance.
+
+6. **L'Impact de l'IA sur la Création Artistique : De l'Art Généré par les Machines à la Musique Composée par des Algorithmes**
+   - Exploration de la manière dont l'intelligence artificielle influence la création artistique et musicale, avec des exemples d'œuvres générées par des algorithmes.
+
+7. **L'Éthique de l'IA et du Deep Learning : Défis et Considérations**
+   - Discussion sur les implications éthiques de l'utilisation de l'IA et du deep learning, y compris les questions de biais, de confidentialité et de responsabilité.
+
+### **Conseils pour Écrire des Articles**
+
+- **Illustrations et Démonstrations** : Utilise des graphiques, des exemples de code et des démonstrations pratiques pour rendre les concepts plus accessibles.
+- **Études de Cas** : Inclue des études de cas réelles pour montrer comment les technologies sont appliquées dans le monde réel.
+- **Tutoriels et Guides** : Propose des tutoriels détaillés avec des étapes claires pour que les lecteurs puissent suivre et appliquer les techniques discutées.

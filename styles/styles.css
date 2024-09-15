@@ -1,3 +1,4 @@
+/* Styles généraux */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -149,9 +150,73 @@ header h1 {
 
 a {
   text-decoration: none;
-  
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+footer {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Media Queries pour les appareils mobiles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul li {
+    display: block;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  .navbar ul {
+    gap: 5px;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    padding: 5px;
+  }
 }
