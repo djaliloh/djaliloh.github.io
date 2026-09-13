@@ -1,220 +1,226 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teaching — Abdoul Djalil Ousseini Hamza</title>
-  <meta name="description" content="Teaching, training courses, and workshops by Abdoul Djalil Ousseini Hamza at INRAE.">
+  <meta name="description"
+    content="Teaching, training courses, and workshops by Abdoul Djalil Ousseini Hamza at INRAE.">
   <meta name="author" content="Abdoul Djalil Ousseini Hamza">
   <link rel="canonical" href="https://djaliloh.github.io/pages/teaching.html">
   <link rel="stylesheet" href="../styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<!-- ── Navigation ───────────────────────────────────────────── -->
-<nav class="nav" aria-label="Main navigation">
-  <div class="nav-inner">
-    <a href="/index.html" class="nav-logo">A.D. Ousseini Hamza</a>
-    <div class="nav-links">
-      <a href="/index.html">Home</a>
-      <a href="/pages/publication.html">Publications</a>
-      <a href="/pages/projects.html">Projects</a>
-      <a href="/pages/experience.html">Experience</a>
-      <a href="/pages/teaching.html" class="active">Teaching</a>
-      <a href="/pages/blog.html">Notes</a>
-      <a href="/pages/curriculumv.html">CV</a>
+  <!-- ── Navigation ───────────────────────────────────────────── -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/index.html" class="nav-logo">A.D. Ousseini Hamza</a>
+      <div class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/pages/publication.html">Publications</a>
+        <a href="/pages/projects.html">Projects</a>
+        <a href="/pages/experience.html">Experience</a>
+        <a href="/pages/teaching.html" class="active">Teaching</a>
+        <a href="/pages/blog.html">Notes</a>
+        <a href="/pages/curriculumv.html">CV</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-    <div class="nav-right">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-        <i class="fas fa-moon" id="themeIcon"></i>
-      </button>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+  </nav>
+  <nav class="nav-drawer" id="navDrawer" aria-label="Mobile navigation">
+    <a href="/index.html">Home</a>
+    <a href="/pages/publication.html">Publications</a>
+    <a href="/pages/projects.html">Projects</a>
+    <a href="/pages/experience.html">Experience</a>
+    <a href="/pages/teaching.html" class="active">Teaching</a>
+    <a href="/pages/blog.html">Notes</a>
+    <a href="/pages/curriculumv.html">CV</a>
+  </nav>
+
+  <!-- ── Page Hero ─────────────────────────────────────────────── -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="page-hero-kicker">Education &amp; Training</p>
+      <h1 class="page-hero-title">Teaching</h1>
+      <p class="page-hero-sub">
+        Courses and hands-on training delivered to researchers and engineers at INRAE.
+        Topics span software engineering best practices and applied deep learning.
+      </p>
     </div>
   </div>
-</nav>
-<nav class="nav-drawer" id="navDrawer" aria-label="Mobile navigation">
-  <a href="/index.html">Home</a>
-  <a href="/pages/publication.html">Publications</a>
-  <a href="/pages/projects.html">Projects</a>
-  <a href="/pages/experience.html">Experience</a>
-  <a href="/pages/teaching.html" class="active">Teaching</a>
-  <a href="/pages/blog.html">Notes</a>
-  <a href="/pages/curriculumv.html">CV</a>
-</nav>
 
-<!-- ── Page Hero ─────────────────────────────────────────────── -->
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <p class="page-hero-kicker">Education &amp; Training</p>
-    <h1 class="page-hero-title">Teaching</h1>
-    <p class="page-hero-sub">
-      Courses and hands-on training delivered to researchers and engineers at INRAE.
-      Topics span software engineering best practices and applied deep learning.
-    </p>
-  </div>
-</div>
+  <main>
+    <div class="container section">
 
-<main>
-  <div class="container section">
-
-    <!-- Course 1: Best Coding Practices -->
-    <article class="teaching-card fade-up" id="coding-practices">
-      <div class="teaching-header">
-        <span class="teaching-icon">🐳</span>
-        <div class="teaching-meta">
-          <h2 class="teaching-title">Best Coding Practices for Researchers</h2>
-          <p class="teaching-org">INRAE / IRHS — Angers, France</p>
-          <p class="teaching-period">2026</p>
+      <!-- Course 1: Best Coding Practices -->
+      <article class="teaching-card fade-up" id="coding-practices">
+        <div class="teaching-header">
+          <span class="teaching-icon">🐳</span>
+          <div class="teaching-meta">
+            <h2 class="teaching-title">Best Coding Practices for Researchers</h2>
+            <p class="teaching-org">INRAE / IRHS — Angers, France</p>
+            <p class="teaching-period">2026</p>
+          </div>
         </div>
-      </div>
 
-      <p class="teaching-desc">
-        A lecture and practical course designed to introduce research engineers and scientists to modern
-        software engineering workflows. The course emphasises reproducibility, automation, and collaboration —
-        skills increasingly critical in computational and data-intensive research.
-      </p>
+        <p class="teaching-desc">
+          A lecture and practical course designed to introduce research engineers and scientists to modern
+          software engineering workflows. The course emphasises reproducibility, automation, and collaboration —
+          skills increasingly critical in computational and data-intensive research.
+        </p>
 
-      <p class="teaching-desc">
-        The practical component is built around a mini Flask application project, guiding participants
-        through the full cycle of containerising an application, running automated tests inside containers,
-        and deploying automatically with a CI/CD pipeline.
-      </p>
+        <p class="teaching-desc">
+          The practical component is built around a mini Flask application project, guiding participants
+          through the full cycle of containerising an application, running automated tests inside containers,
+          and deploying automatically with a CI/CD pipeline.
+        </p>
 
-      <div class="teaching-topics">
-        <p class="teaching-topics-title">Topics covered</p>
-        <ul>
-          <li>Containerisation with Docker — concepts, images, and containers</li>
-          <li>Writing and running a Dockerfile for a Python application</li>
-          <li>Automated testing inside containers</li>
-          <li>Publishing images to a container registry</li>
-          <li>GitLab CI/CD pipeline design and automation</li>
-          <li>Practical project: end-to-end CI/CD for a Flask web service</li>
-        </ul>
-      </div>
-
-      <div class="tags" style="margin-bottom:var(--space-5);">
-        <span class="tag">Docker</span>
-        <span class="tag">GitLab CI/CD</span>
-        <span class="tag">Python</span>
-        <span class="tag">Flask</span>
-        <span class="tag">Testing</span>
-        <span class="tag">DevOps</span>
-      </div>
-
-      <div style="display:flex; gap:var(--space-3); flex-wrap:wrap;">
-        <a href="https://youtu.be/7By-EKdZl9M" target="_blank" rel="noopener" class="btn btn-primary">
-          <i class="fab fa-youtube"></i> Watch Course Video
-        </a>
-      </div>
-    </article>
-
-    <!-- Course 2: Deep Learning Training -->
-    <article class="teaching-card fade-up" id="deep-learning-training">
-      <div class="teaching-header">
-        <span class="teaching-icon">🧠</span>
-        <div class="teaching-meta">
-          <h2 class="teaching-title">Deep Learning for Image Classification</h2>
-          <p class="teaching-org">INRAE Staff Training — Angers, France</p>
-          <p class="teaching-period">March 3–5, 2026</p>
+        <div class="teaching-topics">
+          <p class="teaching-topics-title">Topics covered</p>
+          <ul>
+            <li>Containerisation with Docker — concepts, images, and containers</li>
+            <li>Writing and running a Dockerfile for a Python application</li>
+            <li>Automated testing inside containers</li>
+            <li>Publishing images to a container registry</li>
+            <li>GitLab CI/CD pipeline design and automation</li>
+            <li>Practical project: end-to-end CI/CD for a Flask web service</li>
+          </ul>
         </div>
-      </div>
 
-      <p class="teaching-desc">
-        A three-day intensive hands-on training course for INRAE research staff with limited prior exposure
-        to deep learning. The course provides a practical pathway from foundational concepts to working
-        image classification models, using real datasets and modern tooling throughout.
+        <div class="tags" style="margin-bottom:var(--space-5);">
+          <span class="tag">Docker</span>
+          <span class="tag">GitLab CI/CD</span>
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Testing</span>
+          <span class="tag">DevOps</span>
+        </div>
+
+        <div style="display:flex; gap:var(--space-3); flex-wrap:wrap;">
+          <a href="https://youtu.be/7By-EKdZl9M" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fab fa-youtube"></i> Watch Course Video
+          </a>
+        </div>
+      </article>
+
+      <!-- Course 2: Deep Learning Training -->
+      <article class="teaching-card fade-up" id="deep-learning-training">
+        <div class="teaching-header">
+          <span class="teaching-icon">🧠</span>
+          <div class="teaching-meta">
+            <h2 class="teaching-title">Deep Learning for Image Classification</h2>
+            <p class="teaching-org">INRAE Staff Training — Angers, France</p>
+            <p class="teaching-period">March 3–5, 2026</p>
+          </div>
+        </div>
+
+        <p class="teaching-desc">
+          A three-day intensive hands-on training course for INRAE research staff with limited prior exposure
+          to deep learning. The course provides a practical pathway from foundational concepts to working
+          image classification models, using real datasets and modern tooling throughout.
+        </p>
+
+        <p class="teaching-desc">
+          Participants leave with a working understanding of convolutional neural network architectures,
+          the transfer learning workflow, and the ability to fine-tune pre-trained models on their own datasets.
+          All exercises are in Python with PyTorch, and the course materials are published as an open-source
+          repository.
+        </p>
+
+        <div class="teaching-topics">
+          <p class="teaching-topics-title">Topics covered</p>
+          <ul>
+            <li>Introduction to deep learning: perceptrons, activation functions, backpropagation</li>
+            <li>Convolutional Neural Networks (CNNs): architecture and design principles</li>
+            <li>Classical CNN architectures: ResNet, VGG</li>
+            <li>Transfer learning: feature extraction and fine-tuning strategies</li>
+            <li>Practical image classification pipeline in PyTorch</li>
+            <li>Evaluation, overfitting diagnosis, and regularisation</li>
+          </ul>
+        </div>
+
+        <div class="tags" style="margin-bottom:var(--space-5);">
+          <span class="tag">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">CNN</span>
+          <span class="tag">ResNet</span>
+          <span class="tag">VGG</span>
+          <span class="tag">Transfer Learning</span>
+        </div>
+
+        <div style="display:flex; gap:var(--space-3); flex-wrap:wrap;">
+          <a href="https://github.com/djaliloh/Deep-learning-training" target="_blank" rel="noopener"
+            class="btn btn-primary">
+            <i class="fab fa-github"></i> Course Repository
+          </a>
+        </div>
+      </article>
+
+      <!-- Supervision note -->
+      <!-- <div class="callout fade-up" style="margin-top:var(--space-6);">
+        <p>
+          <strong>MSc Thesis Co-Supervision:</strong>
+          In the context of the PHENET European project at INRAE/IRHS, I have contributed to the supervision
+          of postgraduate student Herearii Metuarea (PHENET PhD, LARIS) on plant phenotyping and computer
+          vision research that resulted in the FrontVeg plugin and the DeepPhenoTree dataset.
       </p>
+      </div> -->
 
-      <p class="teaching-desc">
-        Participants leave with a working understanding of convolutional neural network architectures,
-        the transfer learning workflow, and the ability to fine-tune pre-trained models on their own datasets.
-        All exercises are in Python with PyTorch, and the course materials are published as an open-source
-        repository.
-      </p>
-
-      <div class="teaching-topics">
-        <p class="teaching-topics-title">Topics covered</p>
-        <ul>
-          <li>Introduction to deep learning: perceptrons, activation functions, backpropagation</li>
-          <li>Convolutional Neural Networks (CNNs): architecture and design principles</li>
-          <li>Classical CNN architectures: ResNet, VGG</li>
-          <li>Transfer learning: feature extraction and fine-tuning strategies</li>
-          <li>Practical image classification pipeline in PyTorch</li>
-          <li>Evaluation, overfitting diagnosis, and regularisation</li>
-        </ul>
-      </div>
-
-      <div class="tags" style="margin-bottom:var(--space-5);">
-        <span class="tag">Python</span>
-        <span class="tag">PyTorch</span>
-        <span class="tag">CNN</span>
-        <span class="tag">ResNet</span>
-        <span class="tag">VGG</span>
-        <span class="tag">Transfer Learning</span>
-      </div>
-
-      <div style="display:flex; gap:var(--space-3); flex-wrap:wrap;">
-        <a href="https://github.com/djaliloh/Deep-learning-training" target="_blank" rel="noopener" class="btn btn-primary">
-          <i class="fab fa-github"></i> Course Repository
-        </a>
-      </div>
-    </article>
-
-    <!-- Thesis supervision note -->
-    <div class="callout fade-up" style="margin-top:var(--space-6);">
-      <p>
-        <strong>MSc Thesis Co-Supervision:</strong>
-        In the context of the PHENET European project at INRAE/IRHS, I have contributed to the supervision
-        of postgraduate student Herearii Metuarea (PHENET PhD, LARIS) on plant phenotyping and computer
-        vision research that resulted in the FrontVeg plugin and the DeepPhenoTree dataset.
-      </p>
     </div>
+  </main>
 
-  </div>
-</main>
-
-<!-- ── Footer ────────────────────────────────────────────── -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-left">
-      <p><strong>Abdoul Djalil Ousseini Hamza</strong></p>
-      <p>Research Engineer · INRAE / IRHS · Angers, France</p>
-      <p>&copy; <span id="year"></span>. Built with HTML &amp; CSS.</p>
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p><strong>Abdoul Djalil Ousseini Hamza</strong></p>
+        <p>Research Engineer · INRAE / IRHS · Angers, France</p>
+        <p>&copy; <span id="year"></span>. Built with HTML &amp; CSS.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/djaliloh" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://scholar.google.com/citations?user=SWrOqf4AAAAJ&hl=en" target="_blank" rel="noopener"><i
+            class="fas fa-graduation-cap"></i> Scholar</a>
+        <a href="mailto:abdouldjalilo@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="https://github.com/djaliloh" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://scholar.google.com/citations?user=SWrOqf4AAAAJ&hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Scholar</a>
-      <a href="mailto:abdouldjalilo@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  const toggle = document.getElementById('themeToggle');
-  const icon = document.getElementById('themeIcon');
-  const html = document.documentElement;
-  const saved = localStorage.getItem('theme') || 'light';
-  html.setAttribute('data-theme', saved);
-  icon.className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-  toggle.addEventListener('click', () => {
-    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-    icon.className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-  });
-  const hamburger = document.getElementById('hamburger');
-  const drawer = document.getElementById('navDrawer');
-  hamburger.addEventListener('click', () => {
-    const open = drawer.classList.toggle('open');
-    hamburger.classList.toggle('open', open);
-    hamburger.setAttribute('aria-expanded', open);
-  });
-  const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('themeToggle');
+    const icon = document.getElementById('themeIcon');
+    const html = document.documentElement;
+    const saved = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', saved);
+    icon.className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    toggle.addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      icon.className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    });
+    const hamburger = document.getElementById('hamburger');
+    const drawer = document.getElementById('navDrawer');
+    hamburger.addEventListener('click', () => {
+      const open = drawer.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+    });
+    const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
 </body>
+
 </html>
