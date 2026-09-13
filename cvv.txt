@@ -1,0 +1,190 @@
+CVPPA - ECCV 2026 ExtendedAbstract
+
+https://pypi.org/project/frontvegV2/
+https://napari-hub.org/plugins/frontvegv2.html
+https://youtu.be/0sHq0k9mMcc <-- frontvegv2 napari
+
+(INRAE, IRHS 2026)
+
+Abstract
+Zero-shot plant phenotyping in trellised crops remains challenging because field images simultaneously capture multiple vegetation rows with similar visual appearances. Although recent vision foundation models enable prompt-based segmentation, they often confuse foreground and background vegetation, especially in high-resolution images requiring tiled inference.
+
+We propose a geometry-aware, training-free framework for zero-shot plant trait segmentation from a single monocular RGB image. A relative depth map is first estimated using Depth Anything V2 and processed by a novel Valley-Aware Depth Thresholding (VADT) algorithm to automatically extract the foreground vegetation row. The original image is then segmented by sliding-window inference with SAM3, fragmented predictions are reconstructed using a Graph-Based Mask Assembly (GMA) algorithm, and a geometry-aware fusion removes detections from neighboring rows.
+
+The framework is evaluated on a benchmark of 158 RGB images (including approximately 10,000 manually annotated objects) acquired in vineyards, apple orchards, and apricot orchards across six geographic locations, covering leaf, fruit, black rot, and downy mildew segmentation. VADT improves foreground extraction from 0.55 to 0.85 Dice compared with the strongest RGB-based baseline, while the complete framework consistently outperforms recent foundation-model-based zero-shot segmentation pipelines. These results demonstrate that monocular scene geometry provides an effective prior for robust zero-shot plant phenotyping in structured agricultural environments.
+
+
+Keywords: Plant Phenotyping, Zero-Shot Segmentation, Foundation Models, Monocular Depth Estimation, Trellised Crops
+
+
+@inproceedings{
+hamza2026foregroundaware,
+title={Foreground-Aware Zero-Shot Plant Trait Segmentation in Trellised Crops Using Side View Monocular {RGB} Images},
+author={Abdoul Djalil Ousseini Hamza and Herearii Metuarea and Corentin Lothod{\'e} and Morgane Roth and Eric Duch{\^e}ne and Lionel LEY and David All{\'e}tru and David Marc ROUSSEAU},
+booktitle={11th Workshop on Computer Vision in Plant Phenotyping and Agriculture},
+year={2026},
+url={https://openreview.net/forum?id=Z24CpPVqcU}
+}
+
+
+
+----------
+
+https://github.com/djaliloh/FrontVegV2
+
+SoftwareX (INRAE, IRHS 2026)
+
+\begin{abstract}
+FrontVeg V2 is an open-source, training-free software framework for foreground-aware zero-shot segmentation of plant traits in high-resolution images of trellised crops. The pipeline combines monocular depth estimation, automatic foreground extraction using Valley-Aware Depth Thresholding, tiled zero-shot segmentation, Graph-Based Mask Assembly, and geometry-aware fusion. This design enables plant organs and disease symptoms to be segmented while reducing detections arising from neighboring vegetation rows. The current implementation integrates Depth Anything V2 (DAV2) and SAM3 and can be used through both command-line batch processing and a Napari graphical interface. FrontVeg V2 provides a reusable framework for multi-crop, multi-trait digital phenotyping without task-specific model retraining.
+
+
+
+--------------
+DeepPhenoTree – Apple Edition: a Multi-site apple phenology RGB annotated dataset with deep learning baseline models
+Herearii Metuarea, Abdoul Ousseini Hamza, Walter Guerra, Francesca Zuffa, Francesco Panzeri, Andrea Patocchi, Lidia Lozano, Shauny Hoye, François Laurens, Jeremy Labrosse, Pejman Rasti, David Rousseau
+
+In machine learning–driven plant phenotyping, well-annotated image datasets are essential for developing robust models capable of capturing phenological variability across environments. Here, we introduce DeepPhenoTree – Apple Edition, a multi-site, multi-variety RGB image dataset dedicated to the detection of key phenological stages in apple trees. The dataset comprises 48,320 time-stamped RGB images acquired across four European orchards of the Apple REFPOP consortium under contrasting climatic conditions. From this large corpus, a carefully curated subset of 808 representative images was manually annotated. It includes 241,600 expert annotations covering developmental stages from dormant bud to fruit maturity. Images were acquired using a standardized tractor-mounted phenotyping platform equipped with active flash illumination, ensuring consistent lighting conditions across sites and acquisition dates. Phenological structures were annotated following the BBCH scale, with bounding boxes adapted to organ visibility and developmental stage. In addition to the dataset, we provide baseline deep learning experiments to illustrate detection performance and assess model generalization across locations.
+
+Keywords: Apple phenology, multi-site dataset, deep learning, RGB imaging, growth stages, dataset paper
+
+Metuarea, H., ADGuerra, W., Zuffa, F., Panzeri, F., Patocchi, A., Lozano, L., ... & Rousseau, D. (2026). DeepPhenoTree–Apple Edition: a Multi-site apple phenology RGB annotated dataset with deep learning baseline models.
+
+
+
+------------------------
+
+https://www.codabench.org/competitions/14963/
+
+Data challenge on codabench (INRA, IRHS - 14 April 2026 - 06 juillet 2026)
+
+Why a Phenology Detection Challenge?
+
+Phenology is a key indicator of plant development, from dormancy to harvest, and plays a central role in orchard management. However, it is still largely assessed manually, making it time-consuming and difficult to scale. This challenge introduces a standardized benchmark for phenological object detection under real-world conditions. Collected across four apple European experimental orchard sites [1], the dataset captures strong variability across multiple sites, acquisition conditions, and phenological stages, while benefiting from controlled illumination.
+
+The task is particularly challenging due to:
+
+    Variability across sites and acquisition conditions,
+    Different object sizes and occlusions within tree canopies,
+    High intra-class similarity between adjacent phenological stages
+
+All images were acquired using a standardized imaging platform under controlled illumination conditions, ensuring consistent visual quality across sites while preserving real open field variability conditions. A key objective of this challenge is to publicly promote models that generalize across sites and conditions.
+Challenge Overview
+
+Given an input image of apple trees, participants are asked to design a model that predict bounding boxes for objects associated with Biologische Bundesanstalt,Bundessortenamt et CHemische Industrie (or BBCH) [2] including in three main phenological stages: from Dormant to Flowering (BBCH 00-69), Fruitlet (BBCH 71-77) and Fruit (BBCH 81-89). Ground truth annotations consist of manually labeled bounding boxes with corresponding main phenological stages. Ground-truth boxes are provided in YOLO format (class 0 = flowering, 1 = fruitlet, 2 = fruit).
+
+Models are evaluated automatically upon each submission.
+
+During the Development Phase, participants receive real-time evaluation scores on a public test set and can iteratively improve their models.
+
+During the Blind Evaluation Phase, predictions are generated on a separate private test set, and final scores are only revealed at the end of the competition to ensure fair ranking.
+
+\bibitem{deepphenotree2026challenge}
+H. Metuarea, C. Lothode, A.-D. Hamza Ousseini, J. Garnier, W. Guerra, L. Lozano, A. Patocchi, S. Van Hoye, J. Labrosse, D. Rousseau, ``DeepPhenoTree -- CVPPA Data Challenge,'' CVPPA, 2026. [Online]. Available: \url{https://www.codabench.org/competitions/14963/}
+
+
+
+------------------ 
+https://youtu.be/7By-EKdZl9M <-- coding best pratice
+
+Best coding pratice (INRAE, IRHS - 2026)
+
+Cours et TP
+
+Objectifs du cours :
+- Comprendre la conteneurisation
+- Construire et exécuter une image Docker
+- Exécuter des tests dans un conteneur
+- Publier une image sur une registry
+- Automatiser avec un pipeline GitLab CI/CD
+
+TP
+> → TP : mettre tout ça en pratique sur un mini-projet Flask
+
+
+https://github.com/djaliloh/Deep-learning-training
+This repository provides an educational pipeline for image classification using Transfer Learning with classical CNN architectures (ResNet, VGG). It was developed as part of an INRAE staff training course held from March 3 to 5, 2026.
+
+
+---------------
+Frontveg (INRAE, IRHS december 2024 - april 2025)
+
+https://napari-hub.org/plugins/frontveg.html - 20 avril 2025
+A plugin for foreground vegetation segmentation, tailored for trellised vegetation row images. It uses RGB images to perform inference and allows users to manually refine the generated mask
+
+By Abdoul Djalil Ousseini Hamza, AgroEcoPhen Engineer at IRHS (French Institute located in INRAe Angers, France) and Herearii Metuarea, PHENET PhD at LARIS (French laboratory located in Angers, France)  in Imhorphen team (bioimaging research group lead) under the supervision of Eric Duchêne (Research Engineer), Morgane Roth (Research Engineer) and David Rousseau (Full professor). This plugin was written by Herearii Metuarea and was designed in the context of the european project PHENET
+
+--------------
+https://radar.inria.fr/report/2022/stars/index.html#STARS-RA-2022-uid102
+
+Fall detection in untrimmed videos (INRIA 2022 - 2023 (research engineer))
+
+Participants: Abdoul Djalil Ousseini Hamza, Yoann Torrado, Jose Francisco Saray, François Brémond.
+
+Activity recognition systems which can detect falls have become popular due to the need to provide a safe, comfortable and independent living environment for elderly people. However, many of these systems require wearable sensors. Our approach, unlike these systems, does not require any sensor but uses a camera instead. We use UNIK 62, a skeleton-based activity recognition framework, and adapt it to be able to detect fall actions on untrimmed videos.
+
+UNIK can effectively learn spatio-temporal features and generalize across datasets, we adapt it for fall detection. We use MediaPipe Pose 58 as pose extractor due to its fast and precise pose estimation. We extract 17 body landmarks and this gives us the possibility to do transfer learning with Posetics 62, which contains 142 000 clips with 2D skeletons of 17 body landmarks. Extracting new body landmarks (from 13 to 17) and doing transfer learning enhance the precision.
+
+We use PKU-MMD dataset to fine-tune and evaluate our model. PKU-MMD is a multi-modal dataset for activity recognition with 1076 long untrimmed videos, including 400 fall events, and 50 other daily actions, filmed by 3 camera views and done by 66 unique subjects. Our contribution is to adapt UNIK for fall detection on untrimmed videos, develop an end-to-end fall detection system and post-process the results to determine the temporal localization of the fall event during an online video. The final goal is to integrate the fall detection system into an on-board device. Our demo can work on online simulated videos and online streaming videos.
+
+In the future, we plan to refine our annotations on PKU, add new varieties of fall events from other datasets: NTU, MMact, UR-Fall, UP-Fall. We are also working on distinguishing between dangerous falls and non-dangerous falls by determining the time during which fallen persons stay on the floor.
+
+58  C. Lugaresi, J. Tang, H. Nash, C. McClanahan, E. Uboweja, M. Hays, F. Zhang, C.-L. Chang, M. G. Yong, J. Lee and others. Mediapipe: A framework for building perception pipelines.arXiv preprint arXiv:1906.081722019
+
+62  D. Yang, Y. Wang, A. Dantcheva, L. Garattoni, G. Francesca and F. Bremond. Unik: A unified framework for real-world skeleton-based action recognition.arXiv preprint arXiv:2107.085802021
+
+
+Mon CV:
+Experience:
+Research Engineer || Full-time
+INRIA Sophia Antipolis || Nice, France || June 2022 – May 2023
+Project: CV/ML based fall detection model for elder persons, part of the SECUMAD, in collaboration with STARS, CoBTEK and NODEUS. In analyzing videos, we identify key points of the human body using pose estimation techniques, enabling us to detect falls in the elderly. Our model takes 2D/3D skeletons as input, rendering it less sensitive to variations in color and and light conditions (of the video/image).
+Keywords: Human Keypoint Estimation (HKE), action recognition, action detection, spatio-temporal action recognition
+Tools: Python, Pytorch, Raspberry Pi
+Supervisor: Prof. François Brémond - INRIA
+-------------
+
+Research Assistant || Full-time
+Qatar University || Doha, Qatar || Feb 2021 – Dec 2021
+Project: Early Anomaly Recognition System for Qatar World Cup-2022 (EARS-Q2022)
+Public space monitoring for irregularities includes detecting fire or smoke, identifying abandoned luggage, and crowd surveillance.
+Tools: Python, Pytorch
+Supervisor: Prof. Serkan Kiranyaz - Qatar University
+-----------------
+
+Msc thesis: Real Time Multimodal Baby Monitoring System
+IFI Solution|| Hanoi, Vietnam || June 2019 – November 2019
+Light CNN model embedded in a Raspberry pi for real-time baby posture detection.
+Keywords: Object detection, action detection, baby monitoring, deep neural network.
+Tools: Python, Tensorflow, Raspberry Pi
+Supervisor: Dr. NGUYEN Trong Phuc - IFI-Solution
+-----------------
+
+M1 project: LiDAR 3D data segmentation (3D point cloud)
+Vietnam National University, Hanoi|| Feb 2018 - June 2018
+Ground segmentation from 3D point cloud data for autonomous vehicle vision
+Tools: C/C++, PCL
+Supervisor: Dr Ho Tuong Vinh, Vietnam National University
+----------
+
+Education:
+La Rochelle University || France, La Rochelle
+2017-2019
+MSc || INFORMATION TECHNOLOGY
+Vietnam National University || Hanoi, Vietnam
+2017-2019
+
+BSc || TELECOMMUNICATION
+IAT – Niger || Niamey, Niger
+2012 -2015
+
+Skill:
+IMAGE PROCESSING
+Noise reduction (Gaussian filters), Contour detection (Canny filter), Image segmentation (Otsu method, Canny)
+COMPUTER VISION
+Detection and tracking of objects, detection of points of interest (Harris, Sift)
+MACHINE/DEEP - LEARNING
+Image Classification (CNN, ONN), Image Detection, Image Segmentation (CNN, ONN)
+PROGRAMMING LANGUAGES
+Python, C/C++, Java, HTML/CSS, MySQL,
+Postgresql, JavaScrip, Django
+

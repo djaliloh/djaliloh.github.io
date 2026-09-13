@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Abdoul Djalil Ousseini Hamza</title>
+  <meta name="description" content="Research software, open-source tools, and engineering projects by Abdoul Djalil Ousseini Hamza.">
+  <meta name="author" content="Abdoul Djalil Ousseini Hamza">
+  <link rel="canonical" href="https://djaliloh.github.io/pages/projects.html">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ── Navigation ───────────────────────────────────────────── -->
+<nav class="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-logo">A.D. Ousseini Hamza</a>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/pages/publication.html">Publications</a>
+      <a href="/pages/projects.html" class="active">Projects</a>
+      <a href="/pages/experience.html">Experience</a>
+      <a href="/pages/teaching.html">Teaching</a>
+      <a href="/pages/blog.html">Notes</a>
+      <a href="/pages/curriculumv.html">CV</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<nav class="nav-drawer" id="navDrawer" aria-label="Mobile navigation">
+  <a href="/index.html">Home</a>
+  <a href="/pages/publication.html">Publications</a>
+  <a href="/pages/projects.html" class="active">Projects</a>
+  <a href="/pages/experience.html">Experience</a>
+  <a href="/pages/teaching.html">Teaching</a>
+  <a href="/pages/blog.html">Notes</a>
+  <a href="/pages/curriculumv.html">CV</a>
+</nav>
+
+<!-- ── Page Hero ─────────────────────────────────────────────── -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-hero-kicker">Portfolio</p>
+    <h1 class="page-hero-title">Projects</h1>
+    <p class="page-hero-sub">
+      Research software, open-source tools, and engineering work spanning plant phenotyping,
+      human action recognition, anomaly detection, and autonomous systems.
+    </p>
+  </div>
+</div>
+
+<!-- ── Projects ──────────────────────────────────────────────── -->
+<main>
+  <div class="container section">
+
+    <!-- Featured label -->
+    <h2 style="font-size:var(--text-lg); color:var(--text-muted); font-weight:500; margin-bottom:var(--space-6); letter-spacing:.04em; text-transform:uppercase; font-size:var(--text-xs);">
+      Major Projects
+    </h2>
+
+    <!-- === FrontVeg V2 === -->
+    <article class="project-card fade-up" style="margin-bottom:var(--space-5);">
+      <div class="project-card-header">
+        <span class="project-card-icon">🌿</span>
+        <div class="project-card-links">
+          <a href="https://github.com/djaliloh/FrontVegV2" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub repository">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+          <a href="https://pypi.org/project/frontvegV2/" target="_blank" rel="noopener" title="PyPI" aria-label="PyPI package">
+            <i class="fas fa-box fa-lg"></i>
+          </a>
+          <a href="https://napari-hub.org/plugins/frontvegv2.html" target="_blank" rel="noopener" title="Napari Hub" aria-label="Napari Hub plugin">
+            <i class="fas fa-plug fa-lg"></i>
+          </a>
+        </div>
+      </div>
+      <h2 class="project-card-title">FrontVeg V2</h2>
+      <p class="project-card-period">2026 · INRAE / IRHS, Angers, France</p>
+      <p class="project-card-desc">
+        A geometry-aware, training-free framework for zero-shot plant trait segmentation in high-resolution images of trellised crops
+        (vineyards, orchards). The pipeline automates foreground extraction using a novel Valley-Aware Depth Thresholding (VADT)
+        algorithm applied to relative depth maps from Depth Anything V2. Tiled sliding-window inference with SAM3 produces
+        fine-grained masks, which are assembled with a Graph-Based Mask Assembly (GMA) algorithm and filtered by a geometry-aware
+        fusion step to suppress detections from neighbouring vegetation rows.
+      </p>
+      <p class="project-card-desc">
+        The framework handles leaf, fruit, and disease segmentation (black rot, downy mildew) across six geographic locations,
+        improving foreground extraction Dice from 0.55 to 0.85 vs. the strongest RGB-only baseline. Available as a Python
+        package on PyPI and as a Napari graphical plugin. Results presented at CVPPA / ECCV 2026.
+      </p>
+      <div class="project-card-footer">
+        <div class="tags">
+          <span class="tag tag-accent">Python</span>
+          <span class="tag">SAM3</span>
+          <span class="tag">Depth Anything V2</span>
+          <span class="tag">Napari</span>
+          <span class="tag">Zero-Shot</span>
+          <span class="tag">PyPI</span>
+        </div>
+        <div style="display:flex; gap:var(--space-2); flex-shrink:0; flex-wrap:wrap;">
+          <a href="https://openreview.net/forum?id=Z24CpPVqcU" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+            <i class="fas fa-external-link-alt"></i> Paper
+          </a>
+          <a href="https://youtu.be/0sHq0k9mMcc" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+            <i class="fab fa-youtube"></i> Demo
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- === FrontVeg v1 === -->
+    <article class="project-card fade-up" style="margin-bottom:var(--space-5);">
+      <div class="project-card-header">
+        <span class="project-card-icon">🌾</span>
+        <div class="project-card-links">
+          <a href="https://napari-hub.org/plugins/frontveg.html" target="_blank" rel="noopener" title="Napari Hub" aria-label="Napari Hub plugin">
+            <i class="fas fa-plug fa-lg"></i>
+          </a>
+        </div>
+      </div>
+      <h2 class="project-card-title">FrontVeg (v1)</h2>
+      <p class="project-card-period">December 2024 – April 2025 · INRAE / IRHS, Angers, France</p>
+      <p class="project-card-desc">
+        The first iteration of the FrontVeg pipeline: a Napari plugin for foreground vegetation segmentation in trellised
+        crop images using RGB inputs. Users can run automatic inference and manually refine the generated mask within
+        the Napari interface. Designed in the context of the European PHENET project, the plugin was co-developed with
+        Herearii Metuarea (LARIS, Angers) under the supervision of Eric Duchêne, Morgane Roth, and David Rousseau.
+      </p>
+      <p class="project-card-desc">
+        Published to Napari Hub in April 2025. Superseded by FrontVeg V2 which adds depth-guided foreground detection,
+        SAM3 integration, and multi-crop support.
+      </p>
+      <div class="project-card-footer">
+        <div class="tags">
+          <span class="tag tag-accent">Python</span>
+          <span class="tag">Napari</span>
+          <span class="tag">Image Segmentation</span>
+          <span class="tag">PHENET</span>
+        </div>
+        <a href="https://napari-hub.org/plugins/frontveg.html" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+          <i class="fas fa-plug"></i> Napari Hub
+        </a>
+      </div>
+    </article>
+
+    <!-- === DeepPhenoTree Challenge === -->
+    <article class="project-card fade-up" style="margin-bottom:var(--space-5);">
+      <div class="project-card-header">
+        <span class="project-card-icon">🍎</span>
+        <div class="project-card-links">
+          <a href="https://www.codabench.org/competitions/14963/" target="_blank" rel="noopener" title="Codabench" aria-label="Codabench challenge">
+            <i class="fas fa-trophy fa-lg"></i>
+          </a>
+        </div>
+      </div>
+      <h2 class="project-card-title">DeepPhenoTree — Apple Phenology Detection Challenge</h2>
+      <p class="project-card-period">April 2026 – July 2026 · INRAE / IRHS</p>
+      <p class="project-card-desc">
+        Co-organised a public machine learning benchmark on Codabench for detection of apple phenological stages in field images.
+        The challenge is built around the DeepPhenoTree – Apple Edition dataset: 48,320 RGB images from four European Apple REFPOP
+        orchard sites, with 241,600 expert annotations covering three BBCH phenological stage groups (Flowering, Fruitlet, Fruit).
+      </p>
+      <p class="project-card-desc">
+        The challenge features a Development Phase with live public leaderboard scoring and a Blind Evaluation Phase with a
+        private test set. Participants predict YOLO-format bounding boxes evaluated automatically. The benchmark was presented
+        at CVPPA / ECCV 2026. A companion dataset preprint is available on Research Square.
+      </p>
+      <div class="project-card-footer">
+        <div class="tags">
+          <span class="tag tag-accent">Object Detection</span>
+          <span class="tag">YOLO</span>
+          <span class="tag">Phenotyping</span>
+          <span class="tag">Benchmark</span>
+          <span class="tag">Codabench</span>
+        </div>
+        <div style="display:flex; gap:var(--space-2); flex-shrink:0; flex-wrap:wrap;">
+          <a href="https://www.codabench.org/competitions/14963/" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+            <i class="fas fa-trophy"></i> Challenge
+          </a>
+          <a href="https://doi.org/10.21203/rs.3.rs-8977752/v1" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+            <i class="fas fa-file-alt"></i> Dataset Paper
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- === Fall Detection === -->
+    <article class="project-card fade-up" style="margin-bottom:var(--space-5);">
+      <div class="project-card-header">
+        <span class="project-card-icon">🤸</span>
+        <div class="project-card-links">
+          <a href="https://radar.inria.fr/report/2022/stars/index.html#STARS-RA-2022-uid102" target="_blank" rel="noopener" title="INRIA Report" aria-label="INRIA activity report">
+            <i class="fas fa-external-link-alt fa-lg"></i>
+          </a>
+        </div>
+      </div>
+      <h2 class="project-card-title">CV/ML-Based Fall Detection for the Elderly</h2>
+      <p class="project-card-period">June 2022 – May 2023 · INRIA Sophia Antipolis (STARS team)</p>
+      <p class="project-card-desc">
+        End-to-end fall detection system targeting deployment on embedded devices for safe assisted living,
+        developed as part of the SECUMAD project in collaboration with STARS, CoBTEK, and NODEUS.
+        Falls are detected from camera footage alone — no wearable sensors required.
+      </p>
+      <p class="project-card-desc">
+        The approach adapts the UNIK skeleton-based action recognition framework. MediaPipe Pose extracts 17
+        body landmarks per frame in real time. Transfer learning from the Posetics dataset (142,000 clips)
+        is followed by fine-tuning on PKU-MMD (1,076 untrimmed videos, 400 fall events, 66 subjects, 3 camera views).
+        Post-processing determines the temporal start and end of detected falls in online video streams.
+      </p>
+      <div class="project-card-footer">
+        <div class="tags">
+          <span class="tag tag-accent">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">MediaPipe</span>
+          <span class="tag">Raspberry Pi</span>
+          <span class="tag">Action Recognition</span>
+          <span class="tag">Skeleton</span>
+        </div>
+        <a href="https://radar.inria.fr/report/2022/stars/index.html#STARS-RA-2022-uid102" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+          <i class="fas fa-external-link-alt"></i> INRIA Report
+        </a>
+      </div>
+    </article>
+
+    <hr class="divider">
+    <h2 style="font-size:var(--text-xs); color:var(--text-faint); font-weight:600; margin-bottom:var(--space-6); letter-spacing:.04em; text-transform:uppercase;">
+      Research &amp; Academic Projects
+    </h2>
+
+    <div class="grid-2">
+
+      <!-- === EARS-Q2022 === -->
+      <article class="project-card fade-up">
+        <div class="project-card-header">
+          <span class="project-card-icon">🛡️</span>
+        </div>
+        <h2 class="project-card-title">EARS-Q2022 — Anomaly Detection for Qatar World Cup</h2>
+        <p class="project-card-period">February – December 2021 · Qatar University, Doha</p>
+        <p class="project-card-desc">
+          Research assistant position working on the Early Anomaly Recognition System for Qatar World Cup 2022.
+          Designed and evaluated deep learning models for public space monitoring: fire and smoke detection,
+          abandoned luggage identification, and crowd surveillance from video streams.
+          Supervised by Prof. Serkan Kiranyaz.
+        </p>
+        <div class="project-card-footer">
+          <div class="tags">
+            <span class="tag tag-accent">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Object Detection</span>
+            <span class="tag">Anomaly Detection</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- === Deep Learning Training === -->
+      <article class="project-card fade-up">
+        <div class="project-card-header">
+          <span class="project-card-icon">📚</span>
+          <div class="project-card-links">
+            <a href="https://github.com/djaliloh/Deep-learning-training" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub repository">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+          </div>
+        </div>
+        <h2 class="project-card-title">Deep Learning Training Pipeline</h2>
+        <p class="project-card-period">March 2026 · INRAE Staff Training</p>
+        <p class="project-card-desc">
+          Educational pipeline for image classification via transfer learning with classical CNN architectures
+          (ResNet, VGG). Developed for a three-day INRAE staff training course on applied deep learning.
+          Provides a clean, reproducible starting point for fine-tuning pre-trained models on custom image datasets.
+        </p>
+        <div class="project-card-footer">
+          <div class="tags">
+            <span class="tag tag-accent">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">ResNet</span>
+            <span class="tag">Transfer Learning</span>
+          </div>
+          <a href="https://github.com/djaliloh/Deep-learning-training" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </article>
+
+      <!-- === Baby Monitoring === -->
+      <article class="project-card fade-up">
+        <div class="project-card-header">
+          <span class="project-card-icon">👶</span>
+        </div>
+        <h2 class="project-card-title">Real-Time Multimodal Baby Monitoring System</h2>
+        <p class="project-card-period">June – November 2019 · IFI Solution, Hanoi, Vietnam (MSc Thesis)</p>
+        <p class="project-card-desc">
+          MSc thesis project: a lightweight CNN embedded in a Raspberry Pi for real-time infant posture detection
+          and monitoring. The model is designed to run under the resource constraints of edge hardware while
+          reliably detecting potentially unsafe sleeping postures. Supervised by Dr. Nguyen Trong Phuc.
+        </p>
+        <div class="project-card-footer">
+          <div class="tags">
+            <span class="tag tag-accent">Python</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">Edge AI</span>
+            <span class="tag">Object Detection</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- === LiDAR 3D === -->
+      <article class="project-card fade-up">
+        <div class="project-card-header">
+          <span class="project-card-icon">🚗</span>
+        </div>
+        <h2 class="project-card-title">LiDAR 3D Ground Segmentation for Autonomous Vehicles</h2>
+        <p class="project-card-period">February – June 2018 · Vietnam National University, Hanoi (M1 Project)</p>
+        <p class="project-card-desc">
+          M1 research project implementing ground plane segmentation from 3D LiDAR point cloud data for
+          autonomous vehicle perception. The method isolates drivable ground from obstacles in raw point clouds
+          using the Point Cloud Library (PCL). Supervised by Dr. Ho Tuong Vinh.
+        </p>
+        <div class="project-card-footer">
+          <div class="tags">
+            <span class="tag tag-accent">C/C++</span>
+            <span class="tag">PCL</span>
+            <span class="tag">LiDAR</span>
+            <span class="tag">3D Point Cloud</span>
+            <span class="tag">Autonomous Vehicles</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<!-- ── Footer ────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <p><strong>Abdoul Djalil Ousseini Hamza</strong></p>
+      <p>Research Engineer · INRAE / IRHS · Angers, France</p>
+      <p>&copy; <span id="year"></span>. Built with HTML &amp; CSS.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/djaliloh" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://scholar.google.com/citations?user=SWrOqf4AAAAJ&hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Scholar</a>
+      <a href="mailto:abdouldjalilo@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const toggle = document.getElementById('themeToggle');
+  const icon = document.getElementById('themeIcon');
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme') || 'light';
+  html.setAttribute('data-theme', saved);
+  icon.className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  toggle.addEventListener('click', () => {
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    icon.className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  });
+  const hamburger = document.getElementById('hamburger');
+  const drawer = document.getElementById('navDrawer');
+  hamburger.addEventListener('click', () => {
+    const open = drawer.classList.toggle('open');
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

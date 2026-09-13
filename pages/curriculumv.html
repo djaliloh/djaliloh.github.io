@@ -1,37 +1,282 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Abdoul Djalil Ousseini Hamza</title>
+  <meta name="description" content="Curriculum Vitae of Abdoul Djalil Ousseini Hamza — Research Engineer in Computer Vision and Machine Learning at INRAE/IRHS.">
+  <meta name="author" content="Abdoul Djalil Ousseini Hamza">
+  <link rel="canonical" href="https://djaliloh.github.io/pages/curriculumv.html">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="/pages/blog.html">Blog Posts</a></li>
-                <li><a href="/pages/publication.html">Publications</a></li>  
-            </ul>
-        </nav>
-        <!-- <h1>My CV</h1> -->
-    </header>
-  
-    <main>
-        <h2>Curriculum Vitae</h2>
-         <li><a href="../curriculumvitae/cv_abdoul_.pdf" download="cv_abdoul">Download CV</a></li>  
-    </main>
-  
-    <footer>
-        <p>&copy; <span id="year"></span> My Blog. All rights reserved.</p>
-    </footer>
+
+<!-- ── Navigation ───────────────────────────────────────────── -->
+<nav class="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/index.html" class="nav-logo">A.D. Ousseini Hamza</a>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/pages/publication.html">Publications</a>
+      <a href="/pages/projects.html">Projects</a>
+      <a href="/pages/experience.html">Experience</a>
+      <a href="/pages/teaching.html">Teaching</a>
+      <a href="/pages/blog.html">Notes</a>
+      <a href="/pages/curriculumv.html" class="active">CV</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<nav class="nav-drawer" id="navDrawer" aria-label="Mobile navigation">
+  <a href="/index.html">Home</a>
+  <a href="/pages/publication.html">Publications</a>
+  <a href="/pages/projects.html">Projects</a>
+  <a href="/pages/experience.html">Experience</a>
+  <a href="/pages/teaching.html">Teaching</a>
+  <a href="/pages/blog.html">Notes</a>
+  <a href="/pages/curriculumv.html" class="active">CV</a>
+</nav>
+
+<!-- ── Page Hero ─────────────────────────────────────────────── -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="page-hero-kicker">Curriculum Vitae</p>
+    <h1 class="page-hero-title">Abdoul Djalil Ousseini Hamza</h1>
+    <p class="page-hero-sub">
+      Research Engineer in Computer Vision &amp; Machine Learning · INRAE / IRHS, Angers, France
+    </p>
+    <div style="display:flex; gap:var(--space-3); flex-wrap:wrap; margin-top:var(--space-6);">
+      <a href="../curriculumvitae/cv_abdoul_.pdf" class="btn btn-primary" download>
+        <i class="fas fa-download"></i> Download PDF
+      </a>
+      <a href="mailto:abdouldjalilo@gmail.com" class="btn btn-outline">
+        <i class="fas fa-envelope"></i> abdouldjalilo@gmail.com
+      </a>
+      <a href="https://orcid.org/0009-0008-6172-4439" target="_blank" rel="noopener" class="btn btn-outline">
+        <svg width="14" height="14" viewBox="0 0 256 256" fill="#a6ce39" style="flex-shrink:0;"><circle cx="128" cy="128" r="128"/><path fill="#fff" d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h26.3c28.6 0 41.3-20.7 41.3-39.7 0-21.5-14.3-39.6-41.6-39.6h-26v79.3zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.5 10.1 10.1z"/></svg>
+        ORCID 0009-0008-6172-4439
+      </a>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="container section">
+
+    <div style="max-width: 820px;">
+
+      <!-- Summary -->
+      <section style="margin-bottom:var(--space-12);" class="fade-up">
+        <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-5);">Summary</h2>
+        <div class="card" style="border-left: 4px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0;">
+          <p style="color:var(--text); font-size:var(--text-base); line-height:1.8; margin:0;">
+            Computer Vision and Machine Learning research engineer with experience across academic and industrial research
+            environments in France, Qatar, and Vietnam. Specialised in zero-shot and training-free approaches to plant
+            phenotyping, skeleton-based action recognition, and anomaly detection. Author of open-source software
+            distributed via PyPI and the Napari ecosystem. Committed to reproducible science and practical tool development.
+          </p>
+        </div>
+      </section>
+
+      <!-- Research Experience -->
+      <section style="margin-bottom:var(--space-12);" class="fade-up">
+        <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-5);">
+          <i class="fas fa-briefcase" style="color:var(--accent); margin-right:.5rem;"></i>Research Experience
+        </h2>
+
+        <div style="display:flex; flex-direction:column; gap:var(--space-5);">
+
+          <div class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:var(--space-2); margin-bottom:var(--space-3);">
+              <div>
+                <h3 style="margin:0; font-size:var(--text-lg);">Research Engineer — AgroEcoPhen</h3>
+                <p style="margin:.25rem 0 0; color:var(--accent); font-weight:500; font-size:var(--text-base);">INRAE / IRHS · Angers, France</p>
+              </div>
+              <span class="tag tag-accent">2024 – Present</span>
+            </div>
+            <p style="font-size:var(--text-sm); color:var(--text-muted); margin:0;">
+              Zero-shot plant trait segmentation · Foundation models (SAM3, Depth Anything V2) ·
+              FrontVegV2 (PyPI, Napari) · CVPPA/ECCV 2026 paper · Staff training (Docker, CI/CD, deep learning)
+            </p>
+          </div>
+
+          <div class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:var(--space-2); margin-bottom:var(--space-3);">
+              <div>
+                <h3 style="margin:0; font-size:var(--text-lg);">Research Engineer</h3>
+                <p style="margin:.25rem 0 0; color:var(--accent); font-weight:500; font-size:var(--text-base);">INRIA Sophia Antipolis · STARS Team · Nice, France</p>
+              </div>
+              <span class="tag tag-accent">Jun 2022 – May 2023</span>
+            </div>
+            <p style="font-size:var(--text-sm); color:var(--text-muted); margin:0;">
+              Skeleton-based fall detection for the elderly (SECUMAD project) ·
+              UNIK framework adaptation · MediaPipe Pose · PKU-MMD fine-tuning ·
+              Embedded device deployment (Raspberry Pi) · Supervisor: Prof. François Brémond
+            </p>
+          </div>
+
+          <div class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:var(--space-2); margin-bottom:var(--space-3);">
+              <div>
+                <h3 style="margin:0; font-size:var(--text-lg);">Research Assistant</h3>
+                <p style="margin:.25rem 0 0; color:var(--accent); font-weight:500; font-size:var(--text-base);">Qatar University · Doha, Qatar</p>
+              </div>
+              <span class="tag tag-accent">Feb – Dec 2021</span>
+            </div>
+            <p style="font-size:var(--text-sm); color:var(--text-muted); margin:0;">
+              EARS-Q2022: anomaly recognition for Qatar World Cup public spaces ·
+              Fire/smoke detection, abandoned luggage, crowd surveillance ·
+              Supervisor: Prof. Serkan Kiranyaz
+            </p>
+          </div>
+
+          <div class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:var(--space-2); margin-bottom:var(--space-3);">
+              <div>
+                <h3 style="margin:0; font-size:var(--text-lg);">MSc Thesis Intern</h3>
+                <p style="margin:.25rem 0 0; color:var(--accent); font-weight:500; font-size:var(--text-base);">IFI Solution · Hanoi, Vietnam</p>
+              </div>
+              <span class="tag tag-accent">Jun – Nov 2019</span>
+            </div>
+            <p style="font-size:var(--text-sm); color:var(--text-muted); margin:0;">
+              Real-time multimodal baby monitoring system ·
+              Lightweight CNN on Raspberry Pi · Infant posture detection ·
+              Supervisor: Dr. Nguyen Trong Phuc
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section style="margin-bottom:var(--space-12);" class="fade-up">
+        <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-5);">
+          <i class="fas fa-graduation-cap" style="color:#059669; margin-right:.5rem;"></i>Education
+        </h2>
+        <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+          <div class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:var(--space-2);">
+              <div>
+                <h3 style="margin:0; font-size:var(--text-lg);">MSc — Information Technology</h3>
+                <p style="margin:.25rem 0 0; color:#059669; font-weight:500;">La Rochelle University &amp; Vietnam National University, Hanoi — Joint Degree</p>
+              </div>
+              <span class="tag tag-green">2017 – 2019</span>
+            </div>
+          </div>
+          <div class="card">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:var(--space-2);">
+              <div>
+                <h3 style="margin:0; font-size:var(--text-lg);">BSc — Telecommunications</h3>
+                <p style="margin:.25rem 0 0; color:#059669; font-weight:500;">IAT – Niger · Niamey, Niger</p>
+              </div>
+              <span class="tag tag-green">2012 – 2015</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications (brief) -->
+      <section style="margin-bottom:var(--space-12);" class="fade-up">
+        <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-5);">
+          <i class="fas fa-file-alt" style="color:var(--accent); margin-right:.5rem;"></i>Selected Publications
+        </h2>
+        <div style="display:flex; flex-direction:column; gap:var(--space-3);">
+          <div style="padding:var(--space-4); border-left:3px solid var(--accent); background:var(--bg-card); border-radius:0 var(--radius-sm) var(--radius-sm) 0;">
+            <p style="margin:0; font-size:var(--text-sm); color:var(--text);">
+              <strong>A. D. Ousseini Hamza</strong> et al., "Foreground-Aware Zero-Shot Plant Trait Segmentation in Trellised Crops," <em>CVPPA / ECCV</em>, 2026.
+              <a href="https://openreview.net/forum?id=Z24CpPVqcU" target="_blank" rel="noopener" style="margin-left:.5rem;">[OpenReview]</a>
+            </p>
+          </div>
+          <div style="padding:var(--space-4); border-left:3px solid var(--yellow); background:var(--bg-card); border-radius:0 var(--radius-sm) var(--radius-sm) 0;">
+            <p style="margin:0; font-size:var(--text-sm); color:var(--text);">
+              <strong>A. D. Ousseini Hamza</strong> et al., "FrontVeg V2: Open-Source Framework for Foreground-Aware Zero-Shot Segmentation," <em>SoftwareX</em>, under review, 2026.
+            </p>
+          </div>
+          <div style="padding:var(--space-4); border-left:3px solid var(--accent); background:var(--bg-card); border-radius:0 var(--radius-sm) var(--radius-sm) 0;">
+            <p style="margin:0; font-size:var(--text-sm); color:var(--text);">
+              H. Metuarea, <strong>A. D. Ousseini Hamza</strong> et al., "DeepPhenoTree – Apple Edition," Preprint, Research Square, 2026.
+              <a href="https://doi.org/10.21203/rs.3.rs-8977752/v1" target="_blank" rel="noopener" style="margin-left:.5rem;">[DOI]</a>
+            </p>
+          </div>
+          <div style="padding:var(--space-4); border-left:3px solid var(--border); background:var(--bg-card); border-radius:0 var(--radius-sm) var(--radius-sm) 0;">
+            <p style="margin:0; font-size:var(--text-sm); color:var(--text);">
+              <strong>A. D. Ousseini Hamza</strong> et al., "Fall Detection in Untrimmed Videos," <em>INRIA Activity Report — STARS Team</em>, 2022–2023.
+              <a href="https://radar.inria.fr/report/2022/stars/index.html#STARS-RA-2022-uid102" target="_blank" rel="noopener" style="margin-left:.5rem;">[Report]</a>
+            </p>
+          </div>
+        </div>
+        <p style="margin-top:var(--space-4); font-size:var(--text-sm);">
+          <a href="/pages/publication.html">→ Full publication list</a>
+        </p>
+      </section>
+
+      <!-- Links -->
+      <section class="fade-up">
+        <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-5);">
+          <i class="fas fa-link" style="color:var(--accent); margin-right:.5rem;"></i>Links
+        </h2>
+        <div style="display:flex; flex-wrap:wrap; gap:var(--space-3);">
+          <a href="https://github.com/djaliloh" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://scholar.google.com/citations?user=SWrOqf4AAAAJ&hl=en" target="_blank" rel="noopener" class="btn btn-outline"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+          <a href="https://orcid.org/0009-0008-6172-4439" target="_blank" rel="noopener" class="btn btn-outline">ORCID</a>
+          <a href="https://www.linkedin.com/in/hamza-abdouldjalilo/" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+          <a href="https://x.com/djaliloh" target="_blank" rel="noopener" class="btn btn-outline"><i class="fab fa-x-twitter"></i> X</a>
+          <a href="https://pypi.org/project/frontvegV2/" target="_blank" rel="noopener" class="btn btn-outline"><i class="fas fa-box"></i> PyPI</a>
+          <a href="https://napari-hub.org/plugins/frontvegv2.html" target="_blank" rel="noopener" class="btn btn-outline"><i class="fas fa-plug"></i> Napari Hub</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<!-- ── Footer ────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <p><strong>Abdoul Djalil Ousseini Hamza</strong></p>
+      <p>Research Engineer · INRAE / IRHS · Angers, France</p>
+      <p>&copy; <span id="year"></span>. Built with HTML &amp; CSS.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/djaliloh" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://scholar.google.com/citations?user=SWrOqf4AAAAJ&hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Scholar</a>
+      <a href="mailto:abdouldjalilo@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const toggle = document.getElementById('themeToggle');
+  const icon = document.getElementById('themeIcon');
+  const html = document.documentElement;
+  const saved = localStorage.getItem('theme') || 'light';
+  html.setAttribute('data-theme', saved);
+  icon.className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  toggle.addEventListener('click', () => {
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    icon.className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  });
+  const hamburger = document.getElementById('hamburger');
+  const drawer = document.getElementById('navDrawer');
+  hamburger.addEventListener('click', () => {
+    const open = drawer.classList.toggle('open');
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
-
-
-
-<!-- <div class="coming-soon">
-    <h2>Page under construction</h2>
-    <p>We are actively working on this page. Check back soon for updated content.</p>
-</div> -->
