@@ -1,0 +1,160 @@
+/* ============================================================
+   Page scaffolding: width constraint, vertical rhythm, grids
+   and the inner-page header.
+   ============================================================ */
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.section { padding: var(--space-20) 0; }
+.section-sm { padding: var(--space-12) 0; }
+
+/* Alternating band used between sections on the home page. */
+.section-alt {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.section-title {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-2);
+}
+.section-subtitle {
+  color: var(--text-muted);
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-10);
+}
+.section-header { margin-bottom: var(--space-10); }
+.section-header-with-link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-10);
+  flex-wrap: wrap;
+}
+.section-header-with-link .section-subtitle { margin-bottom: 0; }
+
+/* Small uppercase label introducing a group of cards. */
+.eyebrow {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: var(--space-6);
+}
+
+/* ── Grids ────────────────────────────────────────────────── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-5);
+}
+
+/* Experience page: timeline beside education/skills. */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+.col-heading {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-8);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.col-heading i { color: var(--accent); }
+.col-heading--edu i { color: var(--green); }
+
+/* ── Inner page header ────────────────────────────────────── */
+.page-hero {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-12) 0 var(--space-10);
+}
+.page-hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+.page-hero-kicker {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin-bottom: var(--space-2);
+}
+.page-hero-title { margin-bottom: var(--space-3); }
+.page-hero-sub {
+  font-size: var(--text-lg);
+  color: var(--text-muted);
+  max-width: 60ch;
+  margin: 0;
+}
+.page-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+/* ── Breadcrumb ───────────────────────────────────────────── */
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--text-faint);
+  margin-bottom: var(--space-3);
+}
+.breadcrumb a { color: var(--text-faint); }
+.breadcrumb a:hover { color: var(--accent); }
+.breadcrumb li + li::before {
+  content: "/";
+  margin-right: var(--space-2);
+  color: var(--border);
+}
+.breadcrumb li { display: inline-flex; align-items: center; }
+
+hr.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: var(--space-10) 0;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .two-col { grid-template-columns: 1fr; gap: var(--space-12); }
+}
+
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3 { grid-template-columns: 1fr; }
+  .section { padding: var(--space-12) 0; }
+}
+
+@media (max-width: 480px) {
+  .container,
+  .page-hero-inner { padding: 0 var(--space-4); }
+}

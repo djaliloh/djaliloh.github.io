@@ -1,0 +1,108 @@
+/* ============================================================
+   Design tokens: the single source of truth for colour,
+   typography, spacing and layout. Nothing else in the codebase
+   should hard-code a hex value or a pixel scale.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  /* ── Colour (light) ─────────────────────────────────────── */
+  --bg:           #f8fafc;
+  --bg-card:      #ffffff;
+  --bg-header:    #ffffffcc;
+  --text:         #0f172a;
+  --text-muted:   #64748b;
+  --text-faint:   #94a3b8;
+  --border:       #e2e8f0;
+  --accent:       #4f46e5;
+  --accent-light: #eef2ff;
+  --accent-hover: #4338ca;
+  --accent-rgb:   79 70 229;
+  --green:        #059669;
+  --yellow:       #d97706;
+  --red:          #dc2626;
+  --tag-bg:       #f1f5f9;
+  --tag-text:     #475569;
+
+  /* Status palettes, shared by badges and tags. */
+  --ok-bg:        #d1fae5;
+  --ok-text:      #065f46;
+  --warn-bg:      #fef3c7;
+  --warn-text:    #92400e;
+  --info-bg:      #dbeafe;
+  --info-text:    #1e40af;
+  --neutral-bg:   #f1f5f9;
+  --neutral-text: #475569;
+
+  /* ── Elevation & shape ──────────────────────────────────── */
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / .08), 0 1px 2px -1px rgb(0 0 0 / .06);
+  --shadow:    0 4px 16px 0 rgb(0 0 0 / .08);
+  --shadow-lg: 0 10px 32px 0 rgb(0 0 0 / .12);
+  --radius:    10px;
+  --radius-sm: 6px;
+  --radius-lg: 16px;
+  --transition: .2s ease;
+
+  /* ── Typography ─────────────────────────────────────────── */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+  --text-xs:   .75rem;
+  --text-sm:   .875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+
+  /* ── Spacing ────────────────────────────────────────────── */
+  --space-1:  .25rem;
+  --space-2:  .5rem;
+  --space-3:  .75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* ── Layout ─────────────────────────────────────────────── */
+  --max-w:    1100px;
+  --nav-h:    64px;
+  --tabbar-h: 64px;
+}
+
+/* ── Colour (dark) ────────────────────────────────────────── */
+[data-theme="dark"] {
+  --bg:           #0f172a;
+  --bg-card:      #1e293b;
+  --bg-header:    #0f172acc;
+  --text:         #f1f5f9;
+  --text-muted:   #94a3b8;
+  --text-faint:   #64748b;
+  --border:       #334155;
+  --accent:       #818cf8;
+  --accent-light: #1e1b4b;
+  --accent-hover: #a5b4fc;
+  --accent-rgb:   129 140 248;
+  --tag-bg:       #1e293b;
+  --tag-text:     #cbd5e1;
+
+  --ok-bg:        #064e3b;
+  --ok-text:      #6ee7b7;
+  --warn-bg:      #451a03;
+  --warn-text:    #fcd34d;
+  --info-bg:      #1e3a5f;
+  --info-text:    #93c5fd;
+  --neutral-bg:   #1e293b;
+  --neutral-text: #94a3b8;
+
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / .3);
+  --shadow:    0 4px 16px 0 rgb(0 0 0 / .4);
+  --shadow-lg: 0 10px 32px 0 rgb(0 0 0 / .5);
+}

@@ -1,0 +1,139 @@
+/* ============================================================
+   Publication entries, their collapsible abstract and the
+   BibTeX block attached to each citation.
+   ============================================================ */
+
+.pub-year-group { margin-bottom: var(--space-12); }
+.pub-year {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-3);
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+.pub-entry {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  margin-bottom: var(--space-5);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition);
+  /* Anchored citations land below the sticky header. */
+  scroll-margin-top: calc(var(--nav-h) + var(--space-4));
+}
+.pub-entry:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+}
+
+.pub-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3);
+}
+
+.pub-title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: var(--space-2);
+  line-height: 1.4;
+}
+.pub-title a { color: var(--text); }
+.pub-title a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pub-authors {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-2);
+}
+.pub-authors strong { color: var(--text); }
+
+.pub-venue {
+  font-size: var(--text-sm);
+  color: var(--text-faint);
+  font-style: italic;
+  margin-bottom: var(--space-3);
+}
+
+.pub-abstract {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: var(--space-3) 0 var(--space-4);
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+/* ── Collapsible abstract / citation ──────────────────────── */
+.pub-details { margin-bottom: var(--space-4); }
+.pub-details > summary {
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-muted);
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) 0;
+}
+.pub-details > summary::-webkit-details-marker { display: none; }
+.pub-details > summary::before {
+  content: "\203A";
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: transform var(--transition);
+}
+.pub-details[open] > summary::before { transform: rotate(90deg); }
+.pub-details > summary:hover { color: var(--accent); }
+
+/* ── BibTeX ───────────────────────────────────────────────── */
+.bibtex {
+  margin-top: var(--space-3);
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4);
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  line-height: 1.6;
+  color: var(--text-muted);
+  white-space: pre;
+  tab-size: 2;
+}
+
+/* ── Compact citation list (CV page) ──────────────────────── */
+.citation {
+  padding: var(--space-4);
+  border-left: 3px solid var(--accent);
+  background: var(--bg-card);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.citation p {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--text);
+}
+.citation--review { border-left-color: var(--yellow); }
+.citation--muted { border-left-color: var(--border); }
+
+@media (max-width: 480px) {
+  .pub-entry { padding: var(--space-5) var(--space-4); }
+}

@@ -1,0 +1,43 @@
+/* ============================================================
+   Print / PDF rendering, used when the CV page is printed.
+   ============================================================ */
+
+@media print {
+  .nav,
+  .footer,
+  .tabbar,
+  .nav-sheet,
+  .sheet-backdrop,
+  .to-top,
+  .skip-link,
+  .lang-switch,
+  .theme-toggle,
+  .btn { display: none !important; }
+
+  body {
+    background: #fff;
+    color: #000;
+    padding-bottom: 0;
+    font-size: 11pt;
+  }
+
+  .card,
+  .pub-entry,
+  .teaching-card,
+  .timeline-content,
+  .project-card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+
+  .section { padding: var(--space-6) 0; }
+
+  /* Spell out link targets, which a printed page cannot follow. */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: .75em;
+    word-break: break-all;
+    color: #555;
+  }
+}
