@@ -1,0 +1,6 @@
+# https://djaliloh.github.io/
+User-agent: *
+Allow: /
+Disallow: /offline.html
+
+Sitemap: https://djaliloh.github.io/sitemap.xml
