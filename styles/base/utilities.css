@@ -1,0 +1,138 @@
+/* ============================================================
+   Cross-cutting helpers: accessibility affordances, the scroll
+   reveal, the back-to-top control and small shared blocks.
+   ============================================================ */
+
+/* ── Skip link ────────────────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  left: var(--space-4);
+  top: -100px;
+  z-index: 200;
+  background: var(--accent);
+  color: #fff !important;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  transition: top var(--transition);
+}
+.skip-link:focus {
+  top: var(--space-3);
+  text-decoration: none;
+}
+
+/* ── Keyboard focus ───────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+.btn:focus-visible,
+.nav-logo:focus-visible { outline-offset: 4px; }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Set while the "More" sheet is open. */
+body.no-scroll { overflow: hidden; }
+
+/* ── Scroll reveal ────────────────────────────────────────── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .5s ease, transform .5s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Back to top ──────────────────────────────────────────── */
+.to-top {
+  position: fixed;
+  right: var(--space-5);
+  bottom: var(--space-5);
+  z-index: 90;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-card);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity var(--transition), visibility var(--transition),
+    transform var(--transition), color var(--transition), border-color var(--transition);
+}
+.to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.to-top:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ── Callout ──────────────────────────────────────────────── */
+.callout {
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-6);
+}
+.callout p {
+  color: var(--text);
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+/* ── ORCID mark ───────────────────────────────────────────── */
+.orcid-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+/* ── Motion preferences ───────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .fade-up {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Clear the bottom tab bar. */
+  .to-top {
+    bottom: calc(var(--tabbar-h) + var(--space-3) + env(safe-area-inset-bottom, 0px));
+    right: var(--space-4);
+  }
+}

@@ -1,0 +1,190 @@
+/* ============================================================
+   Card surfaces: the generic .card, the richer .project-card
+   used on the projects page, and the research-interest tiles.
+   ============================================================ */
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+}
+.card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+.card--flush:hover {
+  transform: none;
+  border-color: var(--border);
+}
+.card-link {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+.card-link:hover { text-decoration: none; }
+
+.card-icon {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-4);
+}
+.card-title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: var(--space-2);
+}
+.card-meta {
+  font-size: var(--text-xs);
+  color: var(--text-faint);
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.card-desc {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: var(--space-4);
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+}
+
+/* Header row of a CV entry: title on the left, period on the right. */
+.card-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+.card-split:last-child { margin-bottom: 0; }
+
+/* ── Project cards ────────────────────────────────────────── */
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+}
+.project-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+.project-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.project-card-icon {
+  font-size: 1.75rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.project-card-links {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  flex-shrink: 0;
+}
+.project-card-links a {
+  font-size: var(--text-base);
+  color: var(--text-faint);
+  transition: color var(--transition);
+  text-decoration: none;
+}
+.project-card-links a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+.project-card-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+.project-card-period {
+  font-size: var(--text-xs);
+  color: var(--text-faint);
+  font-weight: 500;
+}
+.project-card-desc {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+.project-card-desc:last-of-type { flex: 1; }
+.project-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+}
+.project-card-footer .tags { margin-top: 0; }
+
+/* ── Research interests ───────────────────────────────────── */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+.interest-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.interest-item:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+.interest-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.interest-text {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
+  /* Grid and flex children float their minimum size up to min-content,
+     which pushes the two-column layout wider than the viewport. */
+  min-width: 0;
+}
+
+@media (max-width: 480px) {
+  .interests-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .interest-item {
+    padding: var(--space-4);
+    min-width: 0;
+  }
+}

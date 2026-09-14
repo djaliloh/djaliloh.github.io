@@ -1,0 +1,129 @@
+/* ============================================================
+   Sticky top navigation — the primary navigation on desktop and
+   a slim brand bar on mobile, where .tabbar takes over.
+   ============================================================ */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-header);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  height: var(--nav-h);
+  transition: background var(--transition);
+}
+.nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: var(--text-lg);
+  color: var(--text) !important;
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: -.02em;
+}
+.nav-logo:hover {
+  text-decoration: none;
+  color: var(--accent) !important;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+.nav-links a {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent);
+  background: var(--accent-light);
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* ── Theme toggle ─────────────────────────────────────────── */
+.theme-toggle {
+  background: var(--tag-bg);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-base);
+  transition: background var(--transition), color var(--transition);
+  flex-shrink: 0;
+}
+.theme-toggle:hover {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+/* ── Language switcher ────────────────────────────────────── */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+  gap: 2px;
+}
+.lang-switch button {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: transparent;
+  border-radius: 4px;
+  padding: .35rem .5rem;
+  line-height: 1;
+  transition: background var(--transition), color var(--transition);
+}
+.lang-switch button:hover { color: var(--accent); }
+.lang-switch button[aria-pressed="true"] {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+/* Inside the mobile sheet the switcher sits on the card background. */
+.sheet-langs .lang-switch { background: var(--bg); }
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Primary navigation moves to the bottom tab bar. */
+  .nav-links { display: none; }
+}
+
+@media (max-width: 480px) {
+  .nav-inner { padding: 0 var(--space-4); }
+  .nav-logo { font-size: var(--text-base); }
+}
