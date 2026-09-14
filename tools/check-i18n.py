@@ -30,7 +30,7 @@ LOCALE_GLOB = "assets/i18n/*.json"
 # data-i18n="key" / data-i18n-html="key" / data-i18n-attr="attr=key; attr2=key2"
 # Both quote styles, because the JavaScript modules build the same attributes.
 MARKUP_RE = re.compile(r"""data-i18n(-html|-attr)?=(["'])(.*?)\2""")
-# element.setAttribute('data-i18n-attr', 'aria-label=key') — the attribute name
+# element.setAttribute('data-i18n-attr', 'aria-label=key'): the attribute name
 # and its value are separate arguments, so MARKUP_RE cannot see them.
 SETATTR_RE = re.compile(
     r"""setAttribute\(\s*(["'])data-i18n(-html|-attr)?\1\s*,\s*(["'])(.*?)\3"""
@@ -119,11 +119,11 @@ def main() -> int:
         print(f"── {name}: {len(provided)} translations")
         if missing:
             failed = True
-            print(f"   missing ({len(missing)}) — these fall back to English:")
+            print(f"   missing ({len(missing)}) , these fall back to English:")
             for key in missing:
                 print(f"     - {key}  [{', '.join(sorted(used[key]))}]")
         if obsolete:
-            print(f"   obsolete ({len(obsolete)}) — no longer referenced:")
+            print(f"   obsolete ({len(obsolete)}) , no longer referenced:")
             for key in obsolete:
                 print(f"     - {key}")
         if empty:

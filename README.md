@@ -1,6 +1,6 @@
 # djaliloh.github.io
 
-Personal research portfolio of **Abdoul Djalil Ousseini Hamza** — Research Engineer in
+Personal research portfolio of **Abdoul Djalil Ousseini Hamza**, Research Engineer in
 computer vision, machine learning and digital plant phenotyping at INRAE / IRHS, Angers.
 
 Live at **<https://djaliloh.github.io/>**.
@@ -32,7 +32,7 @@ index.html, 404.html, offline.html   Home, not-found, offline fallback
 pages/                               Publications, projects, experience, teaching, notes, CV
 
 styles/
-  styles.css                         Index — @imports the partials below, in order
+  styles.css                         Index: @imports the partials below, in order
   base/       tokens.css             Colours, typography, spacing, light/dark palettes
               reset.css              Reset and base typography
               utilities.css          Skip link, focus rings, scroll reveal, back-to-top
@@ -49,7 +49,7 @@ styles/
               teaching.css           Course cards and note placeholders
 
 assets/
-  js/app.js                          Entry point — decides module start order only
+  js/app.js                          Entry point: decides module start order only
   js/modules/config.js               Navigation list, site constants, storage helpers
             i18n.js                  Translation engine
             theme.js                 Light / dark
@@ -89,7 +89,7 @@ Mark up a translatable string with one of:
 | `data-i18n-attr="title=key; aria-label=key2"` | replaces attributes |
 
 Then add the key to `assets/i18n/fr.json`. A missing key simply falls back to the English
-in the markup — nothing breaks.
+in the markup, so nothing breaks.
 
 Publication titles, author lists, venues and abstracts are **deliberately left in English**
 in both languages: a citation is quoted, not localised.
@@ -111,7 +111,7 @@ empty strings.
 
 ## Adding a page
 
-1. Copy an existing page in `pages/` — the `<head>`, header and footer are the template.
+1. Copy an existing page in `pages/`: the `<head>`, header and footer are the template.
 2. Update `<title>`, the description, `canonical`, the `hreflang` links, `og:url` and the
    JSON-LD `BreadcrumbList`.
 3. Add the link to the desktop `.nav-links` block of every page (those stay in the HTML so

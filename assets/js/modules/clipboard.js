@@ -4,8 +4,8 @@
  * Markup contract
  *   <button data-copy="idOfElement"><span data-copy-label>BibTeX</span></button>
  *
- * The citation itself stays visible in a <pre>, so a failed copy — an
- * insecure context, a denied permission — never hides the content.
+ * The citation itself stays visible in a <pre>, so a failed copy (an
+ * insecure context, a denied permission) never hides the content.
  */
 
 import { t } from './i18n.js';

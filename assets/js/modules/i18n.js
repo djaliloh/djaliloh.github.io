@@ -1,7 +1,7 @@
 /**
  * Client-side translation.
  *
- * The HTML ships in English — that is what crawlers and no-JS visitors
+ * The HTML ships in English: that is what crawlers and no-JS visitors
  * get, and it doubles as the fallback when a key is missing. A language
  * file is fetched only when it is actually needed, so an English visitor
  * downloads no dictionary at all.

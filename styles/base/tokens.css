@@ -1,5 +1,5 @@
 /* ============================================================
-   Design tokens — the single source of truth for colour,
+   Design tokens: the single source of truth for colour,
    typography, spacing and layout. Nothing else in the codebase
    should hard-code a hex value or a pixel scale.
    ============================================================ */
@@ -7,7 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
 
 :root {
-  /* ── Colour — light ─────────────────────────────────────── */
+  /* ── Colour (light) ─────────────────────────────────────── */
   --bg:           #f8fafc;
   --bg-card:      #ffffff;
   --bg-header:    #ffffffcc;
@@ -77,7 +77,7 @@
   --tabbar-h: 64px;
 }
 
-/* ── Colour — dark ────────────────────────────────────────── */
+/* ── Colour (dark) ────────────────────────────────────────── */
 [data-theme="dark"] {
   --bg:           #0f172a;
   --bg-card:      #1e293b;

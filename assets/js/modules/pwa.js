@@ -18,7 +18,7 @@ function registerServiceWorker() {
       /* offline support is optional */
     });
 
-  // Registration waits for load so it never competes with first paint — but
+  // Registration waits for load so it never competes with first paint, but
   // this module starts after an awaited translation fetch, so "load" may
   // already be behind us, in which case the listener would never fire.
   if (document.readyState === 'complete') register();

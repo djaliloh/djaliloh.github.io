@@ -98,7 +98,7 @@
   transform: translateY(110%);
   visibility: hidden;
   /* Delayed only while closing, so the sheet is focusable the moment it
-     opens — see .sheet-backdrop above. */
+     opens; see .sheet-backdrop above. */
   transition: transform .28s cubic-bezier(.22, 1, .36, 1), visibility 0s .28s;
 }
 .nav-sheet.open {

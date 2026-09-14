@@ -1,9 +1,9 @@
 /* ============================================================
-   Design system — Abdoul Djalil Ousseini Hamza
+   Design system · Abdoul Djalil Ousseini Hamza
    ------------------------------------------------------------
    This file is only an index: every rule lives in a partial so
    a change stays local to the thing it describes. Import order
-   matters — tokens first, then the reset, then layout, then
+   matters: tokens first, then the reset, then layout, then
    components, and finally the print overrides.
 
    styles/

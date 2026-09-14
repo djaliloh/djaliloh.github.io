@@ -6,8 +6,8 @@
  *      files no longer hard-code `class="active"`;
  *   2. build the mobile tab bar and its "More" sheet from NAV.
  *
- * The tab bar is secondary navigation — the same links already exist
- * in the header and footer markup — so generating it costs nothing in
+ * The tab bar is secondary navigation: the same links already exist
+ * in the header and footer markup, so generating it costs nothing in
  * crawlability and keeps every page in sync.
  */
 

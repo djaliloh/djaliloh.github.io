@@ -1,5 +1,5 @@
 /* ============================================================
-   Service worker — offline shell for the portfolio.
+   Service worker: offline shell for the portfolio.
 
    Strategy
      · navigations  : network-first, fall back to cache, then /offline.html
