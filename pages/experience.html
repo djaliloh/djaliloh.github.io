@@ -3,135 +3,221 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experience — Abdoul Djalil Ousseini Hamza</title>
-  <meta name="description"
-    content="Research and professional experience, and education of Abdoul Djalil Ousseini Hamza.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title data-i18n="meta.experience.title">Experience &amp; Education — Abdoul Djalil Ousseini Hamza</title>
+  <meta name="description" data-i18n-attr="content=meta.experience.description"
+    content="Research positions, internships and academic training of Abdoul Djalil Ousseini Hamza across France, Qatar, Vietnam and Niger, with a full technical skill set.">
   <meta name="author" content="Abdoul Djalil Ousseini Hamza">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="color-scheme" content="light dark">
+
   <link rel="canonical" href="https://djaliloh.github.io/pages/experience.html">
-  <link rel="stylesheet" href="../styles/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="alternate" hreflang="en" href="https://djaliloh.github.io/pages/experience.html">
+  <link rel="alternate" hreflang="fr" href="https://djaliloh.github.io/pages/experience.html?lang=fr">
+  <link rel="alternate" hreflang="x-default" href="https://djaliloh.github.io/pages/experience.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Abdoul Djalil Ousseini Hamza">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:url" content="https://djaliloh.github.io/pages/experience.html">
+  <meta property="og:title" data-i18n-attr="content=meta.experience.ogTitle"
+    content="Experience &amp; Education — Abdoul Djalil Ousseini Hamza">
+  <meta property="og:description" data-i18n-attr="content=meta.experience.ogDescription"
+    content="Research positions and academic training across France, Qatar, Vietnam and Niger.">
+  <meta property="og:image" content="https://djaliloh.github.io/assets/og/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"
+    content="Abdoul Djalil Ousseini Hamza, Research Engineer in computer vision and machine learning at INRAE / IRHS.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@djaliloh">
+  <meta name="twitter:creator" content="@djaliloh">
+
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="A.D. Hamza">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) { /* private mode: keep the default */ }
+    })();
+  </script>
+  <script type="module" src="/assets/js/app.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://djaliloh.github.io/" },
+          { "@type": "ListItem", "position": 2, "name": "Experience", "item": "https://djaliloh.github.io/pages/experience.html" }
+        ]
+      },
+      {
+        "@type": "ProfilePage",
+        "url": "https://djaliloh.github.io/pages/experience.html",
+        "mainEntity": {
+          "@id": "https://djaliloh.github.io/#person",
+          "@type": "Person",
+          "name": "Abdoul Djalil Ousseini Hamza",
+          "hasOccupation": [
+            {
+              "@type": "Occupation",
+              "name": "Research Engineer — AgroEcoPhen",
+              "occupationLocation": { "@type": "City", "name": "Angers, France" }
+            }
+          ],
+          "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "La Rochelle University" },
+            { "@type": "CollegeOrUniversity", "name": "Vietnam National University, Hanoi" },
+            { "@type": "CollegeOrUniversity", "name": "Institut Africain de Technologie, Niger" }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
-  <!-- ── Navigation ───────────────────────────────────────────── -->
-  <nav class="nav" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="/index.html" class="nav-logo">A.D. Ousseini Hamza</a>
-      <div class="nav-links">
-        <a href="/index.html">Home</a>
-        <a href="/pages/publication.html">Publications</a>
-        <a href="/pages/projects.html">Projects</a>
-        <a href="/pages/experience.html" class="active">Experience</a>
-        <a href="/pages/teaching.html">Teaching</a>
-        <a href="/pages/blog.html">Notes</a>
-        <a href="/pages/curriculumv.html">CV</a>
-      </div>
-      <div class="nav-right">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-          <i class="fas fa-moon" id="themeIcon"></i>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-  <nav class="nav-drawer" id="navDrawer" aria-label="Mobile navigation">
-    <a href="/index.html">Home</a>
-    <a href="/pages/publication.html">Publications</a>
-    <a href="/pages/projects.html">Projects</a>
-    <a href="/pages/experience.html" class="active">Experience</a>
-    <a href="/pages/teaching.html">Teaching</a>
-    <a href="/pages/blog.html">Notes</a>
-    <a href="/pages/curriculumv.html">CV</a>
-  </nav>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
 
-  <!-- ── Page Hero ─────────────────────────────────────────────── -->
+  <header>
+    <nav class="nav" data-i18n-attr="aria-label=a11y.mainNav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="/index.html" class="nav-logo">A.D. Ousseini Hamza</a>
+        <div class="nav-links">
+          <a href="/index.html" data-i18n="nav.home">Home</a>
+          <a href="/pages/publication.html" data-i18n="nav.publications">Publications</a>
+          <a href="/pages/projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="/pages/experience.html" data-i18n="nav.experience">Experience</a>
+          <a href="/pages/teaching.html" data-i18n="nav.teaching">Teaching</a>
+          <a href="/pages/blog.html" data-i18n="nav.notes">Notes</a>
+          <a href="/pages/curriculumv.html" data-i18n="nav.cv">CV</a>
+        </div>
+        <div class="nav-right">
+          <div data-lang-switch></div>
+          <span data-install-slot></span>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+            <i class="fas fa-moon" data-theme-icon aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
   <div class="page-hero">
     <div class="page-hero-inner">
-      <p class="page-hero-kicker">Career</p>
-      <h1 class="page-hero-title">Experience &amp; Education</h1>
-      <p class="page-hero-sub">
-        Research positions, internships, and academic training across France, Qatar, and Vietnam.
-        Full CV available as a
-        <a href="/curriculumvitae/cv_abdoul_.pdf" download>PDF download</a>.
+      <nav data-i18n-attr="aria-label=a11y.breadcrumb" aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li><a href="/index.html" data-i18n="nav.home">Home</a></li>
+          <li><span aria-current="page" data-i18n="nav.experience">Experience</span></li>
+        </ol>
+      </nav>
+      <p class="page-hero-kicker" data-i18n="exp.kicker">Career</p>
+      <h1 class="page-hero-title" data-i18n="exp.title">Experience &amp; Education</h1>
+      <p class="page-hero-sub" data-i18n-html="exp.intro">
+        Research positions, internships and academic training across France, Qatar and Vietnam.
+        Full CV available as a <a href="/curriculumvitae/cv_abdoul_.pdf" download>PDF download</a>.
       </p>
     </div>
   </div>
 
-  <main>
+  <main id="main">
     <div class="container section">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: start;">
+      <div class="two-col">
 
-        <!-- ── Experience column ──────────────────────────────── -->
-        <div>
-          <h2
-            style="font-size:var(--text-xl); margin-bottom:var(--space-8); display:flex; align-items:center; gap:var(--space-3);">
-            <i class="fas fa-briefcase" style="color:var(--accent);"></i> Research Experience
+        <!-- ── Research experience ────────────────────────── -->
+        <section aria-labelledby="experience-title">
+          <h2 class="col-heading" id="experience-title">
+            <i class="fas fa-briefcase" aria-hidden="true"></i>
+            <span data-i18n="exp.experienceTitle">Research Experience</span>
           </h2>
 
-          <div class="timeline fade-up">
+          <ol class="timeline fade-up">
 
-            <!-- Job 1: INRAE/IRHS (current) -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
               <div class="timeline-content">
-                <p class="timeline-period">2024 – Present</p>
-                <h3 class="timeline-role">Research Engineer — AgroEcoPhen</h3>
+                <p class="timeline-period" data-i18n="exp.inrae.period">2024 – Present</p>
+                <h3 class="timeline-role" data-i18n="exp.inrae.role">Research Engineer — AgroEcoPhen</h3>
                 <p class="timeline-org">
                   <a href="https://www.inrae.fr" target="_blank" rel="noopener">INRAE / IRHS</a>
                 </p>
-                <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Angers, France</p>
-                <p class="timeline-desc">
-                  Developing computer vision and machine learning tools for automated plant phenotyping in
-                  trellised agricultural crops (vineyards, orchards). Research focuses on zero-shot
-                  segmentation of plant organs and disease symptoms from high-resolution field images,
-                  without requiring task-specific model retraining.
+                <p class="timeline-location">
+                  <i class="fas fa-location-dot" aria-hidden="true"></i>
+                  <span data-i18n="loc.angers">Angers, France</span>
                 </p>
-                <p class="timeline-desc">
-                  Key outputs include FrontVeg and FrontVegV2 (PyPI/Napari), a CVPPA/ECCV 2026 workshop paper,
-                  a SoftwareX paper (under review), co-organisation of the DeepPhenoTree data challenge on Codabench,
+                <p class="timeline-desc" data-i18n="exp.inrae.desc1">
+                  Developing computer vision and machine learning tools for automated plant phenotyping in trellised
+                  agricultural crops (vineyards, orchards). Research focuses on zero-shot segmentation of plant organs
+                  and disease symptoms from high-resolution field images, without requiring task-specific model
+                  retraining.
+                </p>
+                <p class="timeline-desc" data-i18n="exp.inrae.desc2">
+                  Key outputs include FrontVeg and FrontVeg V2 (PyPI / Napari), a CVPPA / ECCV 2026 workshop paper,
+                  a SoftwareX paper under review, co-organisation of the DeepPhenoTree data challenge on Codabench,
                   and staff training courses on deep learning and software engineering practices.
                 </p>
-                <p class="timeline-desc" style="font-size:var(--text-xs); color:var(--text-faint);">
+                <p class="timeline-desc timeline-supervisor" data-i18n="exp.inrae.supervisor">
                   Supervisor: Prof. David Rousseau — University of Angers
                 </p>
                 <div class="tags">
                   <span class="tag">Python</span>
                   <span class="tag">PyTorch</span>
                   <span class="tag">SAM</span>
-                  <span class="tag">Depth Estimation</span>
-                  <span class="tag">Plant Phenotyping</span>
+                  <span class="tag" data-i18n="tag.depth">Depth Estimation</span>
+                  <span class="tag" data-i18n="tag.plantPhenotyping">Plant Phenotyping</span>
                 </div>
               </div>
-            </div>
+            </li>
 
-            <!-- Job 2: INRIA -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
               <div class="timeline-content">
-                <p class="timeline-period">June 2022 – May 2023</p>
-                <h3 class="timeline-role">Research Engineer</h3>
+                <p class="timeline-period" data-i18n="exp.inria.period">June 2022 – May 2023</p>
+                <h3 class="timeline-role" data-i18n="exp.inria.role">Research Engineer</h3>
                 <p class="timeline-org">
                   <a href="https://www.inria.fr" target="_blank" rel="noopener">INRIA Sophia Antipolis</a>
-                  &nbsp;·&nbsp; <a href="https://radar.inria.fr/report/2022/stars/" target="_blank" rel="noopener">STARS
-                    Team</a>
+                  &nbsp;·&nbsp;
+                  <a href="https://radar.inria.fr/report/2022/stars/" target="_blank" rel="noopener">STARS Team</a>
                 </p>
-                <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Nice, France</p>
-                <p class="timeline-desc">
+                <p class="timeline-location">
+                  <i class="fas fa-location-dot" aria-hidden="true"></i>
+                  <span data-i18n="loc.nice">Nice, France</span>
+                </p>
+                <p class="timeline-desc" data-i18n="exp.inria.desc1">
                   Designed and implemented a skeleton-based fall detection system for elderly people as part of the
-                  SECUMAD project, a collaboration between STARS, CoBTEK, and NODEUS. The camera-only approach
-                  uses pose estimation to avoid the need for wearable sensors, targeting deployment on embedded devices.
+                  SECUMAD project, a collaboration between STARS, CoBTEK and NODEUS. The camera-only approach uses
+                  pose estimation to avoid the need for wearable sensors, targeting deployment on embedded devices.
                 </p>
-                <p class="timeline-desc">
-                  Adapted the UNIK spatio-temporal action recognition framework with MediaPipe Pose (17 body landmarks),
-                  applied transfer learning from the Posetics dataset, and fine-tuned on PKU-MMD (1,076 untrimmed
-                  videos,
-                  400 fall events). Developed temporal localisation post-processing for online video streams.
+                <p class="timeline-desc" data-i18n="exp.inria.desc2">
+                  Adapted the UNIK spatio-temporal action recognition framework with MediaPipe Pose (17 body
+                  landmarks), applied transfer learning from the Posetics dataset, and fine-tuned on PKU-MMD
+                  (1,076 untrimmed videos, 400 fall events). Developed temporal localisation post-processing for
+                  online video streams.
                 </p>
-                <p class="timeline-desc" style="font-size:var(--text-xs); color:var(--text-faint);">
+                <p class="timeline-desc timeline-supervisor" data-i18n="exp.inria.supervisor">
                   Supervisor: Prof. François Brémond — INRIA
                 </p>
                 <div class="tags">
@@ -139,53 +225,54 @@
                   <span class="tag">PyTorch</span>
                   <span class="tag">MediaPipe</span>
                   <span class="tag">Raspberry Pi</span>
-                  <span class="tag">Action Recognition</span>
+                  <span class="tag" data-i18n="tag.actionRecognition">Action Recognition</span>
                 </div>
               </div>
-            </div>
+            </li>
 
-            <!-- Job 3: Qatar University -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
               <div class="timeline-content">
-                <p class="timeline-period">February – December 2021</p>
-                <h3 class="timeline-role">Research Assistant</h3>
+                <p class="timeline-period" data-i18n="exp.qatar.period">February – December 2021</p>
+                <h3 class="timeline-role" data-i18n="exp.qatar.role">Research Assistant</h3>
                 <p class="timeline-org">
                   <a href="https://www.qu.edu.qa" target="_blank" rel="noopener">Qatar University</a>
                 </p>
-                <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Doha, Qatar</p>
-                <p class="timeline-desc">
-                  Contributed to the Early Anomaly Recognition System for Qatar World Cup 2022 (EARS-Q2022),
-                  a public space monitoring system using ONN / CNN.
-                  <!-- integrating fire and smoke detection, abandoned luggage
-                  identification, and crowd surveillance using deep learning on video streams. -->
+                <p class="timeline-location">
+                  <i class="fas fa-location-dot" aria-hidden="true"></i>
+                  <span data-i18n="loc.doha">Doha, Qatar</span>
                 </p>
-                <p class="timeline-desc" style="font-size:var(--text-xs); color:var(--text-faint);">
+                <p class="timeline-desc" data-i18n="exp.qatar.desc">
+                  Contributed to the Early Anomaly Recognition System for Qatar World Cup 2022 (EARS-Q2022),
+                  a public space monitoring system using ONN / CNN architectures.
+                </p>
+                <p class="timeline-desc timeline-supervisor" data-i18n="exp.qatar.supervisor">
                   Supervisor: Prof. Serkan Kiranyaz — Qatar University
                 </p>
                 <div class="tags">
                   <span class="tag">Python</span>
                   <span class="tag">PyTorch</span>
-                  <span class="tag">Anomaly Detection</span>
-                  <span class="tag">Object Detection</span>
+                  <span class="tag" data-i18n="tag.anomalyDetection">Anomaly Detection</span>
+                  <span class="tag" data-i18n="tag.objectDetection">Object Detection</span>
                 </div>
               </div>
-            </div>
+            </li>
 
-            <!-- Job 4: IFI Solution (MSc thesis) -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
               <div class="timeline-content">
-                <p class="timeline-period">June – November 2019</p>
-                <h3 class="timeline-role">MSc Thesis Intern</h3>
+                <p class="timeline-period" data-i18n="exp.ifi.period">June – November 2019</p>
+                <h3 class="timeline-role" data-i18n="exp.ifi.role">MSc Thesis Intern</h3>
                 <p class="timeline-org">IFI Solution</p>
-                <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Hanoi, Vietnam</p>
-                <p class="timeline-desc">
-                  MSc thesis: designed and implemented a real-time multimodal baby monitoring system.
-                  A lightweight CNN was embedded on a Raspberry Pi to detect and classify infant sleeping
-                  postures in real time.
+                <p class="timeline-location">
+                  <i class="fas fa-location-dot" aria-hidden="true"></i>
+                  <span data-i18n="loc.hanoi">Hanoi, Vietnam</span>
                 </p>
-                <p class="timeline-desc" style="font-size:var(--text-xs); color:var(--text-faint);">
+                <p class="timeline-desc" data-i18n="exp.ifi.desc">
+                  MSc thesis: designed and implemented a real-time multimodal baby monitoring system. A lightweight
+                  CNN was embedded on a Raspberry Pi to detect and classify infant sleeping postures in real time.
+                </p>
+                <p class="timeline-desc timeline-supervisor" data-i18n="exp.ifi.supervisor">
                   Supervisor: Dr. Nguyen Trong Phuc — IFI Solution
                 </p>
                 <div class="tags">
@@ -195,226 +282,216 @@
                   <span class="tag">Edge AI</span>
                 </div>
               </div>
-            </div>
+            </li>
 
-            <!-- Job 5: VNU M1 project -->
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
+            <li class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true"></span>
               <div class="timeline-content">
-                <p class="timeline-period">February – June 2018</p>
-                <h3 class="timeline-role">M1 Research Project</h3>
+                <p class="timeline-period" data-i18n="exp.vnu.period">February – June 2018</p>
+                <h3 class="timeline-role" data-i18n="exp.vnu.role">M1 Research Project</h3>
                 <p class="timeline-org">Vietnam National University</p>
-                <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Hanoi, Vietnam</p>
-                <p class="timeline-desc">
-                  Ground segmentation from 3D LiDAR point cloud data for autonomous vehicle perception,
-                  implemented using the Point Cloud Library (PCL) in C++.
+                <p class="timeline-location">
+                  <i class="fas fa-location-dot" aria-hidden="true"></i>
+                  <span data-i18n="loc.hanoi">Hanoi, Vietnam</span>
                 </p>
-                <p class="timeline-desc" style="font-size:var(--text-xs); color:var(--text-faint);">
+                <p class="timeline-desc" data-i18n="exp.vnu.desc">
+                  Ground segmentation from 3D LiDAR point cloud data for autonomous vehicle perception, implemented
+                  using the Point Cloud Library (PCL) in C++.
+                </p>
+                <p class="timeline-desc timeline-supervisor" data-i18n="exp.vnu.supervisor">
                   Supervisor: Dr. Ho Tuong Vinh — VNU Hanoi
                 </p>
                 <div class="tags">
                   <span class="tag">C/C++</span>
                   <span class="tag">PCL</span>
                   <span class="tag">LiDAR</span>
-                  <span class="tag">3D Point Cloud</span>
+                  <span class="tag" data-i18n="tag.pointCloud">3D Point Cloud</span>
                 </div>
               </div>
-            </div>
+            </li>
 
-          </div>
-        </div>
+          </ol>
+        </section>
 
-        <!-- ── Education column ───────────────────────────────── -->
+        <!-- ── Education & skills ─────────────────────────── -->
         <div>
-          <h2
-            style="font-size:var(--text-xl); margin-bottom:var(--space-8); display:flex; align-items:center; gap:var(--space-3);">
-            <i class="fas fa-graduation-cap" style="color:#059669;"></i> Education
-          </h2>
+          <section aria-labelledby="education-title">
+            <h2 class="col-heading col-heading--edu" id="education-title">
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+              <span data-i18n="exp.educationTitle">Education</span>
+            </h2>
 
-          <div class="timeline fade-up">
+            <ol class="timeline fade-up">
 
-            <!-- MSc -->
-            <div class="timeline-item">
-              <div class="timeline-dot timeline-dot-edu"></div>
-              <div class="timeline-content">
-                <p class="timeline-period timeline-period-edu">2017 – 2019</p>
-                <h3 class="timeline-role">MSc — Information Technology</h3>
-                <p class="timeline-org timeline-org-edu">Joint Degree Program</p>
-                <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> La Rochelle, France &amp; Hanoi,
-                  Vietnam</p>
-                <p class="timeline-desc">
-                  Dual-degree Master of Science awarded jointly by
-                  <strong>IFI - Vietnam National University, Hanoi </strong> (Vietnam)
-                  and <strong>La Rochelle University</strong> (France).
-                  Coursework covered artificial intelligence, computer vision, machine learning, image processing,
-                  network systems, and software engineering.
-                </p>
-                <p class="timeline-desc">
-                  MSc thesis: Real-Time Multimodal Baby Monitoring System using lightweight CNN on Raspberry Pi
-                  (IFI Solution, Hanoi, 2019).
-                </p>
-                <div class="tags">
-                  <span class="tag tag-green">Computer Vision</span>
-                  <span class="tag tag-green">Machine Learning</span>
-                  <span class="tag tag-green">Image Processing</span>
+              <li class="timeline-item">
+                <span class="timeline-dot timeline-dot--edu" aria-hidden="true"></span>
+                <div class="timeline-content">
+                  <p class="timeline-period timeline-period--edu">2017 – 2019</p>
+                  <h3 class="timeline-role" data-i18n="edu.msc.title">MSc — Information Technology</h3>
+                  <p class="timeline-org timeline-org--edu" data-i18n="edu.msc.org">Joint Degree Programme</p>
+                  <p class="timeline-location">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>
+                    <span data-i18n="edu.msc.location">La Rochelle, France &amp; Hanoi, Vietnam</span>
+                  </p>
+                  <p class="timeline-desc" data-i18n-html="edu.msc.desc1">
+                    Dual-degree Master of Science awarded jointly by
+                    <strong>IFI — Vietnam National University, Hanoi</strong> (Vietnam)
+                    and <strong>La Rochelle University</strong> (France).
+                    Coursework covered artificial intelligence, computer vision, machine learning, image processing,
+                    network systems and software engineering.
+                  </p>
+                  <p class="timeline-desc" data-i18n="edu.msc.desc2">
+                    MSc thesis: Real-Time Multimodal Baby Monitoring System using a lightweight CNN on Raspberry Pi
+                    (IFI Solution, Hanoi, 2019).
+                  </p>
+                  <div class="tags">
+                    <span class="tag tag-green" data-i18n="tag.computerVision">Computer Vision</span>
+                    <span class="tag tag-green" data-i18n="tag.machineLearning">Machine Learning</span>
+                    <span class="tag tag-green" data-i18n="tag.imageProcessing">Image Processing</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <span class="timeline-dot timeline-dot--edu" aria-hidden="true"></span>
+                <div class="timeline-content">
+                  <p class="timeline-period timeline-period--edu">2012 – 2015</p>
+                  <h3 class="timeline-role" data-i18n="edu.bsc.title">BSc — Telecommunications</h3>
+                  <p class="timeline-org timeline-org--edu">IAT – Niger</p>
+                  <p class="timeline-location">
+                    <i class="fas fa-location-dot" aria-hidden="true"></i>
+                    <span data-i18n="loc.niamey">Niamey, Niger</span>
+                  </p>
+                  <p class="timeline-desc" data-i18n="edu.bsc.desc">
+                    Bachelor of Science in Telecommunications at the Institut Africain de Technologie, Niger.
+                    Foundation training in signal processing, electronics, network systems and applied mathematics.
+                  </p>
+                  <div class="tags">
+                    <span class="tag tag-green" data-i18n="tag.telecom">Telecommunications</span>
+                    <span class="tag tag-green" data-i18n="tag.signal">Signal Processing</span>
+                    <span class="tag tag-green" data-i18n="tag.electronics">Electronics</span>
+                  </div>
+                </div>
+              </li>
+
+            </ol>
+          </section>
+
+          <section aria-labelledby="skills-title" style="margin-top:var(--space-16)">
+            <h2 class="col-heading" id="skills-title">
+              <i class="fas fa-screwdriver-wrench" aria-hidden="true"></i>
+              <span data-i18n="exp.skillsTitle">Technical Skills</span>
+            </h2>
+
+            <div class="skills-grid skills-grid--stacked fade-up">
+
+              <div class="skill-group">
+                <h3 class="skill-group-title" data-i18n="tag.computerVision">Computer Vision</h3>
+                <div class="skill-items">
+                  <span class="skill-pill" data-i18n="tag.objectDetection">Object Detection</span>
+                  <span class="skill-pill" data-i18n="skill.instanceSeg">Instance Segmentation</span>
+                  <span class="skill-pill" data-i18n="skill.pose">Pose Estimation</span>
+                  <span class="skill-pill" data-i18n="tag.depth">Depth Estimation</span>
+                  <span class="skill-pill" data-i18n="skill.zeroShotSeg">Zero-Shot Segmentation</span>
+                  <span class="skill-pill" data-i18n="tag.pointCloud">3D Point Cloud</span>
+                  <span class="skill-pill" data-i18n="tag.actionRecognition">Action Recognition</span>
                 </div>
               </div>
-            </div>
 
-            <!-- BSc -->
-            <div class="timeline-item">
-              <div class="timeline-dot timeline-dot-edu"></div>
-              <div class="timeline-content">
-                <p class="timeline-period timeline-period-edu">2012 – 2015</p>
-                <h3 class="timeline-role">BSc — Telecommunications</h3>
-                <p class="timeline-org timeline-org-edu">IAT – Niger</p>
-                <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Niamey, Niger</p>
-                <p class="timeline-desc">
-                  Bachelor of Science in Telecommunications at the Institut Africain de Technologie, Niger.
-                  Foundation training in signal processing, electronics, network systems, and applied mathematics.
-                </p>
-                <div class="tags">
-                  <span class="tag tag-green">Telecommunications</span>
-                  <span class="tag tag-green">Signal Processing</span>
-                  <span class="tag tag-green">Electronics</span>
+              <div class="skill-group">
+                <h3 class="skill-group-title" data-i18n="tag.machineLearning">Machine Learning</h3>
+                <div class="skill-items">
+                  <span class="skill-pill">CNN</span>
+                  <span class="skill-pill">ResNet / VGG</span>
+                  <span class="skill-pill" data-i18n="tag.transferLearning">Transfer Learning</span>
+                  <span class="skill-pill">YOLO</span>
+                  <span class="skill-pill">SAM / SAM3</span>
+                  <span class="skill-pill" data-i18n="skill.foundationModels">Foundation Models</span>
+                  <span class="skill-pill" data-i18n="skill.gnn">Graph Neural Networks</span>
                 </div>
               </div>
-            </div>
 
-          </div>
-
-          <!-- ── Technical Skills ──────────────────────────────── -->
-          <h2
-            style="font-size:var(--text-xl); margin-top:var(--space-16); margin-bottom:var(--space-8); display:flex; align-items:center; gap:var(--space-3);">
-            <i class="fas fa-tools" style="color:var(--accent);"></i> Technical Skills
-          </h2>
-
-          <div class="skills-grid fade-up" style="grid-template-columns:1fr;">
-
-            <div class="skill-group">
-              <span class="skill-group-title">Computer Vision</span>
-              <div class="skill-items">
-                <span class="skill-pill">Object Detection</span>
-                <span class="skill-pill">Instance Segmentation</span>
-                <span class="skill-pill">Pose Estimation</span>
-                <span class="skill-pill">Depth Estimation</span>
-                <span class="skill-pill">Zero-Shot Segmentation</span>
-                <span class="skill-pill">3D Point Cloud</span>
-                <span class="skill-pill">Action Recognition</span>
+              <div class="skill-group">
+                <h3 class="skill-group-title" data-i18n="tag.imageProcessing">Image Processing</h3>
+                <div class="skill-items">
+                  <span class="skill-pill" data-i18n="skill.gaussian">Gaussian Filters</span>
+                  <span class="skill-pill" data-i18n="skill.canny">Canny Edge Detection</span>
+                  <span class="skill-pill" data-i18n="skill.otsu">Otsu Segmentation</span>
+                  <span class="skill-pill">Harris / SIFT</span>
+                  <span class="skill-pill" data-i18n="skill.hough">Hough Transform</span>
+                  <span class="skill-pill">OpenCV</span>
+                </div>
               </div>
-            </div>
 
-            <div class="skill-group">
-              <span class="skill-group-title">Machine Learning</span>
-              <div class="skill-items">
-                <span class="skill-pill">CNN</span>
-                <span class="skill-pill">ResNet / VGG</span>
-                <span class="skill-pill">Transfer Learning</span>
-                <span class="skill-pill">YOLO</span>
-                <span class="skill-pill">SAM / SAM3</span>
-                <span class="skill-pill">Foundation Models</span>
-                <span class="skill-pill">Graph Neural Networks</span>
+              <div class="skill-group">
+                <h3 class="skill-group-title" data-i18n="exp.programming">Programming</h3>
+                <div class="skill-items">
+                  <span class="skill-pill">Python</span>
+                  <span class="skill-pill">PyTorch</span>
+                  <span class="skill-pill">TensorFlow</span>
+                  <span class="skill-pill">C/C++</span>
+                  <span class="skill-pill">Java</span>
+                  <span class="skill-pill">JavaScript</span>
+                  <span class="skill-pill">HTML/CSS</span>
+                  <span class="skill-pill">SQL</span>
+                  <span class="skill-pill">Django</span>
+                </div>
               </div>
-            </div>
 
-            <div class="skill-group">
-              <span class="skill-group-title">Image Processing</span>
-              <div class="skill-items">
-                <span class="skill-pill">Gaussian Filters</span>
-                <span class="skill-pill">Canny Edge Detection</span>
-                <span class="skill-pill">Otsu Segmentation</span>
-                <span class="skill-pill">Harris / SIFT</span>
-                <span class="skill-pill">Hough Transform</span>
-                <span class="skill-pill">OpenCV</span>
+              <div class="skill-group">
+                <h3 class="skill-group-title" data-i18n="exp.tools">Tools &amp; Infrastructure</h3>
+                <div class="skill-items">
+                  <span class="skill-pill">Docker</span>
+                  <span class="skill-pill">GitLab CI/CD</span>
+                  <span class="skill-pill">Git</span>
+                  <span class="skill-pill">Napari</span>
+                  <span class="skill-pill">PCL</span>
+                  <span class="skill-pill">MediaPipe</span>
+                  <span class="skill-pill">Raspberry Pi</span>
+                </div>
               </div>
-            </div>
 
-            <div class="skill-group">
-              <span class="skill-group-title">Programming</span>
-              <div class="skill-items">
-                <span class="skill-pill">Python</span>
-                <span class="skill-pill">PyTorch</span>
-                <span class="skill-pill">TensorFlow</span>
-                <span class="skill-pill">C/C++</span>
-                <span class="skill-pill">Java</span>
-                <span class="skill-pill">JavaScript</span>
-                <span class="skill-pill">HTML/CSS</span>
-                <span class="skill-pill">SQL</span>
-                <span class="skill-pill">Django</span>
-              </div>
             </div>
-
-            <div class="skill-group">
-              <span class="skill-group-title">Tools &amp; Infrastructure</span>
-              <div class="skill-items">
-                <span class="skill-pill">Docker</span>
-                <span class="skill-pill">GitLab CI/CD</span>
-                <span class="skill-pill">Git</span>
-                <span class="skill-pill">Napari</span>
-                <span class="skill-pill">PCL</span>
-                <span class="skill-pill">MediaPipe</span>
-                <span class="skill-pill">Raspberry Pi</span>
-              </div>
-            </div>
-
-          </div>
+          </section>
         </div>
 
       </div>
     </div>
   </main>
 
-  <!-- ── Footer ────────────────────────────────────────────── -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-left">
         <p><strong>Abdoul Djalil Ousseini Hamza</strong></p>
-        <p>Research Engineer · INRAE / IRHS · Angers, France</p>
-        <p>&copy; <span id="year"></span>. Built with HTML &amp; CSS.</p>
+        <p data-i18n="footer.role">Research Engineer · INRAE / IRHS · Angers, France</p>
+        <p>&copy; <span data-year>2026</span> · <span data-i18n="footer.rights">All rights reserved.</span></p>
       </div>
-      <div class="footer-links">
-        <a href="https://github.com/djaliloh" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://scholar.google.com/citations?user=SWrOqf4AAAAJ&hl=en" target="_blank" rel="noopener"><i
-            class="fas fa-graduation-cap"></i> Scholar</a>
-        <a href="mailto:abdouldjalilo@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-      </div>
+      <nav class="footer-links" data-i18n-attr="aria-label=a11y.footerNav" aria-label="Profiles and contact">
+        <a href="https://github.com/djaliloh" target="_blank" rel="noopener">
+          <i class="fab fa-github" aria-hidden="true"></i> GitHub
+        </a>
+        <a href="https://scholar.google.com/citations?user=SWrOqf4AAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <i class="fas fa-graduation-cap" aria-hidden="true"></i> Scholar
+        </a>
+        <a href="https://orcid.org/0009-0008-6172-4439" target="_blank" rel="noopener">
+          <svg class="orcid-icon" viewBox="0 0 256 256" fill="#a6ce39" aria-hidden="true" focusable="false">
+            <circle cx="128" cy="128" r="128" />
+            <path fill="#fff"
+              d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h26.3c28.6 0 41.3-20.7 41.3-39.7 0-21.5-14.3-39.6-41.6-39.6h-26v79.3zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.5 10.1 10.1z" />
+          </svg>
+          ORCID
+        </a>
+        <a href="https://www.linkedin.com/in/abdoul-djalil-ousseini-hamza/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+        </a>
+        <a href="mailto:abdouldjalilo@gmail.com">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <span data-i18n="common.email">Email</span>
+        </a>
+      </nav>
     </div>
   </footer>
 
-  <style>
-    /* Make two-column layout stack on mobile */
-    @media (max-width: 768px) {
-      .container.section>div[style*="grid-template-columns"] {
-        grid-template-columns: 1fr !important;
-        gap: var(--space-10) !important;
-      }
-    }
-  </style>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const toggle = document.getElementById('themeToggle');
-    const icon = document.getElementById('themeIcon');
-    const html = document.documentElement;
-    const saved = localStorage.getItem('theme') || 'light';
-    html.setAttribute('data-theme', saved);
-    icon.className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-    toggle.addEventListener('click', () => {
-      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-      icon.className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-    });
-    const hamburger = document.getElementById('hamburger');
-    const drawer = document.getElementById('navDrawer');
-    hamburger.addEventListener('click', () => {
-      const open = drawer.classList.toggle('open');
-      hamburger.classList.toggle('open', open);
-      hamburger.setAttribute('aria-expanded', open);
-    });
-    const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-  </script>
 </body>
 
 </html>

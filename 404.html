@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title data-i18n="meta.notFound.title">Page not found — Abdoul Djalil Ousseini Hamza</title>
+  <meta name="description" data-i18n-attr="content=meta.notFound.description"
+    content="This page does not exist. Use the navigation to find publications, projects, experience or the CV.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) { /* private mode: keep the default */ }
+    })();
+  </script>
+  <script type="module" src="/assets/js/app.js"></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+
+  <header>
+    <nav class="nav" data-i18n-attr="aria-label=a11y.mainNav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="/index.html" class="nav-logo">A.D. Ousseini Hamza</a>
+        <div class="nav-links">
+          <a href="/index.html" data-i18n="nav.home">Home</a>
+          <a href="/pages/publication.html" data-i18n="nav.publications">Publications</a>
+          <a href="/pages/projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="/pages/experience.html" data-i18n="nav.experience">Experience</a>
+          <a href="/pages/teaching.html" data-i18n="nav.teaching">Teaching</a>
+          <a href="/pages/blog.html" data-i18n="nav.notes">Notes</a>
+          <a href="/pages/curriculumv.html" data-i18n="nav.cv">CV</a>
+        </div>
+        <div class="nav-right">
+          <div data-lang-switch></div>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+            <i class="fas fa-moon" data-theme-icon aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="container section">
+      <div class="notes-placeholder">
+        <div class="notes-placeholder-icon" aria-hidden="true">🧭</div>
+        <p class="page-hero-kicker">404</p>
+        <h1 class="section-title" data-i18n="notFound.title">Page not found</h1>
+        <p data-i18n="notFound.text">
+          The page you are looking for does not exist or has moved.
+          The links below will take you back to the site.
+        </p>
+        <div class="hero-cta" style="justify-content:center; margin-top:var(--space-8)">
+          <a href="/index.html" class="btn btn-primary">
+            <i class="fas fa-house" aria-hidden="true"></i>
+            <span data-i18n="notFound.home">Back to home</span>
+          </a>
+          <a href="/pages/publication.html" class="btn btn-outline">
+            <i class="fas fa-file-lines" aria-hidden="true"></i>
+            <span data-i18n="nav.publications">Publications</span>
+          </a>
+          <a href="/pages/projects.html" class="btn btn-outline">
+            <i class="fas fa-diagram-project" aria-hidden="true"></i>
+            <span data-i18n="nav.projects">Projects</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p><strong>Abdoul Djalil Ousseini Hamza</strong></p>
+        <p data-i18n="footer.role">Research Engineer · INRAE / IRHS · Angers, France</p>
+        <p>&copy; <span data-year>2026</span> · <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+      <nav class="footer-links" data-i18n-attr="aria-label=a11y.footerNav" aria-label="Profiles and contact">
+        <a href="https://github.com/djaliloh" target="_blank" rel="noopener">
+          <i class="fab fa-github" aria-hidden="true"></i> GitHub
+        </a>
+        <a href="mailto:abdouldjalilo@gmail.com">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <span data-i18n="common.email">Email</span>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+
+</html>

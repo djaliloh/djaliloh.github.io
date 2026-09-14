@@ -1,208 +1,275 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notes — Abdoul Djalil Ousseini Hamza</title>
-  <meta name="description" content="Notes, tutorials, and articles on computer vision, machine learning, and image processing — planned content by Abdoul Djalil Ousseini Hamza.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title data-i18n="meta.notes.title">Notes — Abdoul Djalil Ousseini Hamza</title>
+  <meta name="description" data-i18n-attr="content=meta.notes.description"
+    content="Articles, tutorials and practical notes on computer vision, machine learning and image processing by Abdoul Djalil Ousseini Hamza.">
   <meta name="author" content="Abdoul Djalil Ousseini Hamza">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="color-scheme" content="light dark">
+
   <link rel="canonical" href="https://djaliloh.github.io/pages/blog.html">
-  <link rel="stylesheet" href="../styles/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="alternate" hreflang="en" href="https://djaliloh.github.io/pages/blog.html">
+  <link rel="alternate" hreflang="fr" href="https://djaliloh.github.io/pages/blog.html?lang=fr">
+  <link rel="alternate" hreflang="x-default" href="https://djaliloh.github.io/pages/blog.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Abdoul Djalil Ousseini Hamza">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:url" content="https://djaliloh.github.io/pages/blog.html">
+  <meta property="og:title" data-i18n-attr="content=meta.notes.ogTitle"
+    content="Notes — Abdoul Djalil Ousseini Hamza">
+  <meta property="og:description" data-i18n-attr="content=meta.notes.ogDescription"
+    content="Articles, tutorials and practical notes on computer vision, machine learning and image processing.">
+  <meta property="og:image" content="https://djaliloh.github.io/assets/og/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"
+    content="Abdoul Djalil Ousseini Hamza, Research Engineer in computer vision and machine learning at INRAE / IRHS.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@djaliloh">
+  <meta name="twitter:creator" content="@djaliloh">
+
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="A.D. Hamza">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) { /* private mode: keep the default */ }
+    })();
+  </script>
+  <script type="module" src="/assets/js/app.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://djaliloh.github.io/" },
+          { "@type": "ListItem", "position": 2, "name": "Notes", "item": "https://djaliloh.github.io/pages/blog.html" }
+        ]
+      },
+      {
+        "@type": "Blog",
+        "name": "Notes — Abdoul Djalil Ousseini Hamza",
+        "url": "https://djaliloh.github.io/pages/blog.html",
+        "inLanguage": ["en", "fr"],
+        "author": { "@id": "https://djaliloh.github.io/#person" },
+        "about": ["Computer Vision", "Image Processing", "Machine Learning"]
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
 
-<!-- ── Navigation ───────────────────────────────────────────── -->
-<nav class="nav" aria-label="Main navigation">
-  <div class="nav-inner">
-    <a href="/index.html" class="nav-logo">A.D. Ousseini Hamza</a>
-    <div class="nav-links">
-      <a href="/index.html">Home</a>
-      <a href="/pages/publication.html">Publications</a>
-      <a href="/pages/projects.html">Projects</a>
-      <a href="/pages/experience.html">Experience</a>
-      <a href="/pages/teaching.html">Teaching</a>
-      <a href="/pages/blog.html" class="active">Notes</a>
-      <a href="/pages/curriculumv.html">CV</a>
-    </div>
-    <div class="nav-right">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-        <i class="fas fa-moon" id="themeIcon"></i>
-      </button>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</nav>
-<nav class="nav-drawer" id="navDrawer" aria-label="Mobile navigation">
-  <a href="/index.html">Home</a>
-  <a href="/pages/publication.html">Publications</a>
-  <a href="/pages/projects.html">Projects</a>
-  <a href="/pages/experience.html">Experience</a>
-  <a href="/pages/teaching.html">Teaching</a>
-  <a href="/pages/blog.html" class="active">Notes</a>
-  <a href="/pages/curriculumv.html">CV</a>
-</nav>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
 
-<!-- ── Page Hero ─────────────────────────────────────────────── -->
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <p class="page-hero-kicker">Blog &amp; Notes</p>
-    <h1 class="page-hero-title">Notes</h1>
-    <p class="page-hero-sub">
-      Articles, tutorials, and practical notes on computer vision, machine learning, and image processing.
-      This section is currently being built — check back soon.
-    </p>
-  </div>
-</div>
+  <header>
+    <nav class="nav" data-i18n-attr="aria-label=a11y.mainNav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="/index.html" class="nav-logo">A.D. Ousseini Hamza</a>
+        <div class="nav-links">
+          <a href="/index.html" data-i18n="nav.home">Home</a>
+          <a href="/pages/publication.html" data-i18n="nav.publications">Publications</a>
+          <a href="/pages/projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="/pages/experience.html" data-i18n="nav.experience">Experience</a>
+          <a href="/pages/teaching.html" data-i18n="nav.teaching">Teaching</a>
+          <a href="/pages/blog.html" data-i18n="nav.notes">Notes</a>
+          <a href="/pages/curriculumv.html" data-i18n="nav.cv">CV</a>
+        </div>
+        <div class="nav-right">
+          <div data-lang-switch></div>
+          <span data-install-slot></span>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+            <i class="fas fa-moon" data-theme-icon aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-<main>
-  <div class="container section">
-
-    <!-- Coming soon placeholder -->
-    <div class="notes-placeholder fade-up">
-      <div class="notes-placeholder-icon">📝</div>
-      <h2 style="margin-bottom:var(--space-4); font-size:var(--text-2xl);">Coming Soon</h2>
-      <p style="color:var(--text-muted); line-height:1.75;">
-        I'm working on a series of articles covering computer vision fundamentals, applied deep learning,
-        and practical machine learning techniques. The goal is to write content that is accessible
-        to beginners while remaining technically precise and useful to practitioners.
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <nav data-i18n-attr="aria-label=a11y.breadcrumb" aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li><a href="/index.html" data-i18n="nav.home">Home</a></li>
+          <li><span aria-current="page" data-i18n="nav.notes">Notes</span></li>
+        </ol>
+      </nav>
+      <p class="page-hero-kicker" data-i18n="notes.kicker">Blog &amp; Notes</p>
+      <h1 class="page-hero-title" data-i18n="nav.notes">Notes</h1>
+      <p class="page-hero-sub" data-i18n="notes.intro">
+        Articles, tutorials and practical notes on computer vision, machine learning and image processing.
+        This section is currently being built — check back soon.
       </p>
     </div>
+  </div>
 
-    <!-- Planned topics -->
-    <div style="max-width:860px; margin: 0 auto;">
-      <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-6); text-align:center; color:var(--text-muted);">
-        Planned Topics
-      </h2>
+  <main id="main">
+    <div class="container section">
 
-      <h3 style="font-size:var(--text-sm); text-transform:uppercase; letter-spacing:.06em; color:var(--text-faint); font-weight:600; margin-bottom:var(--space-4);">
-        Computer Vision
-      </h3>
-      <div class="notes-planned">
-        <div class="notes-topic">
-          <p class="notes-topic-label">Fundamentals</p>
-          <p class="notes-topic-title">Introduction to Computer Vision: Concepts, Applications, and Challenges</p>
-        </div>
-        <div class="notes-topic">
-          <p class="notes-topic-label">Tutorial</p>
-          <p class="notes-topic-title">Real-Time Object Detection with YOLO and OpenCV</p>
-        </div>
-        <div class="notes-topic">
-          <p class="notes-topic-label">Deep Dive</p>
-          <p class="notes-topic-title">CNNs for Image Classification: Architecture and Practical Guide</p>
-        </div>
-        <div class="notes-topic">
-          <p class="notes-topic-label">Application</p>
-          <p class="notes-topic-title">Facial Expression Analysis with Deep Learning</p>
-        </div>
-        <div class="notes-topic">
-          <p class="notes-topic-label">Research</p>
-          <p class="notes-topic-title">Computer Vision in Medicine: Detecting Diseases from Medical Images</p>
-        </div>
-        <div class="notes-topic">
-          <p class="notes-topic-label">Generative</p>
-          <p class="notes-topic-title">Image Generation with GANs — A Practical Introduction</p>
-        </div>
+      <div class="notes-placeholder fade-up">
+        <div class="notes-placeholder-icon" aria-hidden="true">📝</div>
+        <h2 class="section-title" data-i18n="notes.soon">Coming soon</h2>
+        <p data-i18n="notes.soonText">
+          I am working on a series of articles covering computer vision fundamentals, applied deep learning and
+          practical machine learning techniques. The goal is to write content that is accessible to beginners while
+          remaining technically precise and useful to practitioners.
+        </p>
       </div>
 
-      <h3 style="font-size:var(--text-sm); text-transform:uppercase; letter-spacing:.06em; color:var(--text-faint); font-weight:600; margin-bottom:var(--space-4); margin-top:var(--space-8);">
-        Image Processing
-      </h3>
-      <div class="notes-planned">
-        <div class="notes-topic">
-          <p class="notes-topic-label">Fundamentals</p>
-          <p class="notes-topic-title">Core Image Processing Techniques: Filters, Fourier Transforms, Thresholding</p>
-        </div>
-        <div class="notes-topic">
-          <p class="notes-topic-label">Comparison</p>
-          <p class="notes-topic-title">Image Segmentation: Classical Methods vs. Learning-Based Approaches</p>
-        </div>
-        <div class="notes-topic">
-          <p class="notes-topic-label">Tutorial</p>
-          <p class="notes-topic-title">Hough Transform for Geometric Shape Detection</p>
-        </div>
-      </div>
+      <div class="notes-group">
+        <h2 class="section-title" style="text-align:center; margin-bottom:var(--space-8)"
+          data-i18n="notes.plannedTitle">Planned topics</h2>
 
-      <h3 style="font-size:var(--text-sm); text-transform:uppercase; letter-spacing:.06em; color:var(--text-faint); font-weight:600; margin-bottom:var(--space-4); margin-top:var(--space-8);">
-        Machine Learning &amp; Deep Learning
-      </h3>
-      <div class="notes-planned">
-        <div class="notes-topic">
-          <p class="notes-topic-label">Fundamentals</p>
-          <p class="notes-topic-title">Guide to Neural Networks: From Perceptrons to Deep Architectures</p>
-        </div>
-        <div class="notes-topic">
-          <p class="notes-topic-label">Practical</p>
-          <p class="notes-topic-title">Hyperparameter Optimisation: Grid Search, Random Search, and Beyond</p>
-        </div>
-        <div class="notes-topic">
-          <p class="notes-topic-label">Research</p>
-          <p class="notes-topic-title">Transformers in Computer Vision: ViT, DINO, and Friends</p>
-        </div>
-        <div class="notes-topic">
-          <p class="notes-topic-label">Applied</p>
-          <p class="notes-topic-title">Anomaly Detection with Autoencoders: Security and Surveillance Applications</p>
-        </div>
-        <div class="notes-topic">
-          <p class="notes-topic-label">Discussion</p>
-          <p class="notes-topic-title">AI Ethics in Deep Learning: Bias, Privacy, and Responsibility</p>
-        </div>
-      </div>
+        <section aria-labelledby="notes-cv">
+          <h3 class="eyebrow" id="notes-cv" data-i18n="tag.computerVision">Computer Vision</h3>
+          <div class="notes-planned">
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.fundamentals">Fundamentals</p>
+              <p class="notes-topic-title" data-i18n="notes.cv.1">Introduction to Computer Vision: Concepts,
+                Applications and Challenges</p>
+            </article>
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.tutorial">Tutorial</p>
+              <p class="notes-topic-title" data-i18n="notes.cv.2">Real-Time Object Detection with YOLO and OpenCV</p>
+            </article>
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.deepDive">Deep Dive</p>
+              <p class="notes-topic-title" data-i18n="notes.cv.3">CNNs for Image Classification: Architecture and
+                Practical Guide</p>
+            </article>
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.application">Application</p>
+              <p class="notes-topic-title" data-i18n="notes.cv.4">Facial Expression Analysis with Deep Learning</p>
+            </article>
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.research">Research</p>
+              <p class="notes-topic-title" data-i18n="notes.cv.5">Computer Vision in Medicine: Detecting Diseases from
+                Medical Images</p>
+            </article>
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.generative">Generative</p>
+              <p class="notes-topic-title" data-i18n="notes.cv.6">Image Generation with GANs — A Practical
+                Introduction</p>
+            </article>
+          </div>
+        </section>
 
-      <div style="text-align:center; margin-top:var(--space-10);">
-        <p style="color:var(--text-faint); font-size:var(--text-sm);">
+        <section aria-labelledby="notes-ip" style="margin-top:var(--space-10)">
+          <h3 class="eyebrow" id="notes-ip" data-i18n="tag.imageProcessing">Image Processing</h3>
+          <div class="notes-planned">
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.fundamentals">Fundamentals</p>
+              <p class="notes-topic-title" data-i18n="notes.ip.1">Core Image Processing Techniques: Filters, Fourier
+                Transforms, Thresholding</p>
+            </article>
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.comparison">Comparison</p>
+              <p class="notes-topic-title" data-i18n="notes.ip.2">Image Segmentation: Classical Methods vs.
+                Learning-Based Approaches</p>
+            </article>
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.tutorial">Tutorial</p>
+              <p class="notes-topic-title" data-i18n="notes.ip.3">Hough Transform for Geometric Shape Detection</p>
+            </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="notes-ml" style="margin-top:var(--space-10)">
+          <h3 class="eyebrow" id="notes-ml" data-i18n="notes.mlTitle">Machine Learning &amp; Deep Learning</h3>
+          <div class="notes-planned">
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.fundamentals">Fundamentals</p>
+              <p class="notes-topic-title" data-i18n="notes.ml.1">Guide to Neural Networks: From Perceptrons to Deep
+                Architectures</p>
+            </article>
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.practical">Practical</p>
+              <p class="notes-topic-title" data-i18n="notes.ml.2">Hyperparameter Optimisation: Grid Search, Random
+                Search and Beyond</p>
+            </article>
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.research">Research</p>
+              <p class="notes-topic-title" data-i18n="notes.ml.3">Transformers in Computer Vision: ViT, DINO and
+                Friends</p>
+            </article>
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.applied">Applied</p>
+              <p class="notes-topic-title" data-i18n="notes.ml.4">Anomaly Detection with Autoencoders: Security and
+                Surveillance Applications</p>
+            </article>
+            <article class="notes-topic">
+              <p class="notes-topic-label" data-i18n="notes.label.discussion">Discussion</p>
+              <p class="notes-topic-title" data-i18n="notes.ml.5">AI Ethics in Deep Learning: Bias, Privacy and
+                Responsibility</p>
+            </article>
+          </div>
+        </section>
+
+        <p style="text-align:center; margin-top:var(--space-10); color:var(--text-faint); font-size:var(--text-sm)"
+          data-i18n-html="notes.follow">
           Want to be notified when articles go live? Follow me on
           <a href="https://x.com/djaliloh" target="_blank" rel="noopener">X</a>
           or connect on
-          <a href="https://www.linkedin.com/in/hamza-abdouldjalilo/" target="_blank" rel="noopener">LinkedIn</a>.
+          <a href="https://www.linkedin.com/in/abdoul-djalil-ousseini-hamza/" target="_blank"
+            rel="noopener">LinkedIn</a>.
         </p>
       </div>
-    </div>
 
-  </div>
-</main>
-
-<!-- ── Footer ────────────────────────────────────────────── -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-left">
-      <p><strong>Abdoul Djalil Ousseini Hamza</strong></p>
-      <p>Research Engineer · INRAE / IRHS · Angers, France</p>
-      <p>&copy; <span id="year"></span>. Built with HTML &amp; CSS.</p>
     </div>
-    <div class="footer-links">
-      <a href="https://github.com/djaliloh" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://x.com/djaliloh" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i> X</a>
-      <a href="mailto:abdouldjalilo@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-    </div>
-  </div>
-</footer>
+  </main>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  const toggle = document.getElementById('themeToggle');
-  const icon = document.getElementById('themeIcon');
-  const html = document.documentElement;
-  const saved = localStorage.getItem('theme') || 'light';
-  html.setAttribute('data-theme', saved);
-  icon.className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-  toggle.addEventListener('click', () => {
-    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-    icon.className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-  });
-  const hamburger = document.getElementById('hamburger');
-  const drawer = document.getElementById('navDrawer');
-  hamburger.addEventListener('click', () => {
-    const open = drawer.classList.toggle('open');
-    hamburger.classList.toggle('open', open);
-    hamburger.setAttribute('aria-expanded', open);
-  });
-  const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-</script>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p><strong>Abdoul Djalil Ousseini Hamza</strong></p>
+        <p data-i18n="footer.role">Research Engineer · INRAE / IRHS · Angers, France</p>
+        <p>&copy; <span data-year>2026</span> · <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+      <nav class="footer-links" data-i18n-attr="aria-label=a11y.footerNav" aria-label="Profiles and contact">
+        <a href="https://github.com/djaliloh" target="_blank" rel="noopener">
+          <i class="fab fa-github" aria-hidden="true"></i> GitHub
+        </a>
+        <a href="https://x.com/djaliloh" target="_blank" rel="noopener">
+          <i class="fab fa-x-twitter" aria-hidden="true"></i> X
+        </a>
+        <a href="https://www.linkedin.com/in/abdoul-djalil-ousseini-hamza/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+        </a>
+        <a href="mailto:abdouldjalilo@gmail.com">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <span data-i18n="common.email">Email</span>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
 </body>
+
 </html>

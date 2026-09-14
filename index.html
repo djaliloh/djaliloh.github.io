@@ -2,492 +2,612 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdoul Djalil Ousseini Hamza — Computer Vision &amp; ML Research Engineer</title>
-    <meta name="description"
-        content="Research Engineer at INRAE/IRHS specialising in computer vision, machine learning, and digital plant phenotyping. Author of FrontVegV2 and researcher at the intersection of deep learning and agricultural science.">
-    <meta name="author" content="Abdoul Djalil Ousseini Hamza">
-    <meta property="og:title" content="Abdoul Djalil Ousseini Hamza">
-    <meta property="og:description"
-        content="Research Engineer at INRAE/IRHS · Computer Vision · Machine Learning · Plant Phenotyping">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://djaliloh.github.io/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@djaliloh">
-    <link rel="canonical" href="https://djaliloh.github.io/">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title data-i18n="meta.home.title">Abdoul Djalil Ousseini Hamza — Computer Vision &amp; ML Research Engineer</title>
+  <meta name="description" data-i18n-attr="content=meta.home.description"
+    content="Research Engineer at INRAE / IRHS specialising in computer vision, machine learning and digital plant phenotyping. Author of FrontVeg V2 for zero-shot plant trait segmentation.">
+  <meta name="author" content="Abdoul Djalil Ousseini Hamza">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="canonical" href="https://djaliloh.github.io/">
+  <link rel="alternate" hreflang="en" href="https://djaliloh.github.io/">
+  <link rel="alternate" hreflang="fr" href="https://djaliloh.github.io/?lang=fr">
+  <link rel="alternate" hreflang="x-default" href="https://djaliloh.github.io/">
+
+  <!-- ── Social cards ─────────────────────────────────────── -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Abdoul Djalil Ousseini Hamza">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:url" content="https://djaliloh.github.io/">
+  <meta property="og:title" data-i18n-attr="content=meta.home.ogTitle"
+    content="Abdoul Djalil Ousseini Hamza — Computer Vision &amp; Machine Learning">
+  <meta property="og:description" data-i18n-attr="content=meta.home.ogDescription"
+    content="Research Engineer at INRAE / IRHS. Zero-shot plant phenotyping, foundation models and human action recognition.">
+  <meta property="og:image" content="https://djaliloh.github.io/assets/og/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"
+    content="Abdoul Djalil Ousseini Hamza, Research Engineer in computer vision and machine learning at INRAE / IRHS.">
+  <meta property="profile:first_name" content="Abdoul Djalil">
+  <meta property="profile:last_name" content="Ousseini Hamza">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@djaliloh">
+  <meta name="twitter:creator" content="@djaliloh">
+
+  <!-- ── Icons & app install ──────────────────────────────── -->
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="A.D. Hamza">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- ── Assets ───────────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Applies the stored theme before first paint, so a dark-mode
+       visitor never sees a white flash. -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) { /* private mode: keep the default */ }
+    })();
+  </script>
+  <script type="module" src="/assets/js/app.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://djaliloh.github.io/#website",
+        "url": "https://djaliloh.github.io/",
+        "name": "Abdoul Djalil Ousseini Hamza",
+        "inLanguage": ["en", "fr"],
+        "publisher": { "@id": "https://djaliloh.github.io/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://djaliloh.github.io/#person",
+        "name": "Abdoul Djalil Ousseini Hamza",
+        "givenName": "Abdoul Djalil",
+        "familyName": "Ousseini Hamza",
+        "url": "https://djaliloh.github.io/",
+        "image": "https://djaliloh.github.io/images/adjalil.jpeg",
+        "email": "mailto:abdouldjalilo@gmail.com",
+        "jobTitle": "Research Engineer",
+        "description": "Research Engineer in computer vision, machine learning and digital plant phenotyping at INRAE / IRHS, Angers, France.",
+        "identifier": "https://orcid.org/0009-0008-6172-4439",
+        "worksFor": {
+          "@type": "ResearchOrganization",
+          "name": "INRAE — Institut de Recherche en Horticulture et Semences (IRHS)",
+          "url": "https://www.inrae.fr"
+        },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "La Rochelle University", "url": "https://www.univ-larochelle.fr" },
+          { "@type": "CollegeOrUniversity", "name": "Vietnam National University, Hanoi" }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Angers",
+          "addressCountry": "FR"
+        },
+        "knowsAbout": [
+          "Computer Vision",
+          "Machine Learning",
+          "Deep Learning",
+          "Digital Plant Phenotyping",
+          "Zero-Shot Segmentation",
+          "Monocular Depth Estimation",
+          "Human Action Recognition",
+          "3D Point Cloud Processing"
+        ],
+        "knowsLanguage": ["en", "fr"],
+        "sameAs": [
+          "https://github.com/djaliloh",
+          "https://scholar.google.com/citations?user=SWrOqf4AAAAJ&hl=en",
+          "https://orcid.org/0009-0008-6172-4439",
+          "https://www.linkedin.com/in/abdoul-djalil-ousseini-hamza/",
+          "https://x.com/djaliloh"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
-    <!-- ── Navigation ───────────────────────────────────────────── -->
-    <nav class="nav" aria-label="Main navigation">
-        <div class="nav-inner">
-            <a href="/" class="nav-logo">A.D. Ousseini Hamza</a>
-            <div class="nav-links" role="list">
-                <a href="/" class="active" role="listitem">Home</a>
-                <a href="/pages/publication.html" role="listitem">Publications</a>
-                <a href="/pages/projects.html" role="listitem">Projects</a>
-                <a href="/pages/experience.html" role="listitem">Experience</a>
-                <a href="/pages/teaching.html" role="listitem">Teaching</a>
-                <a href="/pages/blog.html" role="listitem">Notes</a>
-                <a href="/pages/curriculumv.html" role="listitem">CV</a>
-            </div>
-            <div class="nav-right">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-                    <i class="fas fa-moon" id="themeIcon"></i>
-                </button>
-                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+
+  <!-- ── Navigation ───────────────────────────────────────── -->
+  <header>
+    <nav class="nav" data-i18n-attr="aria-label=a11y.mainNav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="/index.html" class="nav-logo">A.D. Ousseini Hamza</a>
+        <div class="nav-links">
+          <a href="/index.html" data-i18n="nav.home">Home</a>
+          <a href="/pages/publication.html" data-i18n="nav.publications">Publications</a>
+          <a href="/pages/projects.html" data-i18n="nav.projects">Projects</a>
+          <a href="/pages/experience.html" data-i18n="nav.experience">Experience</a>
+          <a href="/pages/teaching.html" data-i18n="nav.teaching">Teaching</a>
+          <a href="/pages/blog.html" data-i18n="nav.notes">Notes</a>
+          <a href="/pages/curriculumv.html" data-i18n="nav.cv">CV</a>
         </div>
+        <div class="nav-right">
+          <div data-lang-switch></div>
+          <span data-install-slot></span>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+            <i class="fas fa-moon" data-theme-icon aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
     </nav>
+  </header>
 
-    <!-- Mobile drawer -->
-    <nav class="nav-drawer" id="navDrawer" aria-label="Mobile navigation">
-        <a href="/" class="active">Home</a>
-        <a href="/pages/publication.html">Publications</a>
-        <a href="/pages/projects.html">Projects</a>
-        <a href="/pages/experience.html">Experience</a>
-        <a href="/pages/teaching.html">Teaching</a>
-        <a href="/pages/blog.html">Notes</a>
-        <a href="/pages/curriculumv.html">CV</a>
-    </nav>
+  <main id="main">
 
-    <!-- ── Hero ─────────────────────────────────────────────────── -->
+    <!-- ── Hero ───────────────────────────────────────────── -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-inner">
-                <div class="hero-text">
-                    <p class="hero-kicker">Research Engineer · INRAE / IRHS · Angers, France</p>
-                    <h1 class="hero-name">Abdoul Djalil<br>Ousseini Hamza</h1>
-                    <p class="hero-title">Computer Vision &amp; Machine Learning</p>
-                    <p class="hero-bio">
-                        I design and build vision systems where deep learning meets the real world.
-                        From skeleton-based fall detection in untrimmed videos for the elderly to zero-shot plant trait
-                        segmentation in vineyards and orchards. I work at INRAE's IRHS institute in
-                        Angers, France, developing open-source tools for digital phenotyping.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="/pages/publication.html" class="btn btn-primary">
-                            <i class="fas fa-file-alt"></i> Publications
-                        </a>
-                        <a href="/pages/projects.html" class="btn btn-outline">
-                            <i class="fas fa-code-branch"></i> Projects
-                        </a>
-                        <a href="/curriculumvitae/cv_abdoul_.pdf" class="btn btn-outline" download>
-                            <i class="fas fa-download"></i> Download CV
-                        </a>
-                    </div>
-                    <div class="hero-links">
-                        <a href="https://github.com/djaliloh" target="_blank" rel="noopener" class="hero-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=SWrOqf4AAAAJ&hl=en" target="_blank"
-                            rel="noopener" class="hero-link">
-                            <i class="fas fa-graduation-cap"></i> Google Scholar
-                        </a>
-                        <a href="https://orcid.org/0009-0008-6172-4439" target="_blank" rel="noopener"
-                            class="hero-link">
-                            <svg class="orcid-icon" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
-                                fill="#a6ce39">
-                                <circle cx="128" cy="128" r="128" />
-                                <path fill="#fff"
-                                    d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h26.3c28.6 0 41.3-20.7 41.3-39.7 0-21.5-14.3-39.6-41.6-39.6h-26v79.3zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.5 10.1 10.1z" />
-                            </svg>
-                            ORCID
-                        </a>
-                        <a href="https://www.linkedin.com/in/abdoul-djalil-ousseini-hamza/" target="_blank"
-                            rel="noopener" class="hero-link">
-                            <i class="fab fa-linkedin-in"></i> LinkedIn
-                        </a>
-                        <a href="mailto:abdouldjalilo@gmail.com" class="hero-link">
-                            <i class="fas fa-envelope"></i> Email
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-photo-wrap">
-                    <img src="./images/adjalil.jpeg" alt="Abdoul Djalil Ousseini Hamza" class="hero-photo" width="220"
-                        height="220">
-                </div>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <p class="hero-kicker" data-i18n="home.hero.kicker">Research Engineer · INRAE / IRHS · Angers, France</p>
+            <h1 class="hero-name">Abdoul Djalil<br>Ousseini Hamza</h1>
+            <p class="hero-title" data-i18n="home.hero.title">Computer Vision &amp; Machine Learning</p>
+            <p class="hero-bio" data-i18n="home.hero.bio">
+              I design and build vision systems where deep learning meets the real world — from skeleton-based
+              fall detection in untrimmed videos to zero-shot plant trait segmentation in vineyards and orchards.
+              I work at INRAE's IRHS institute in Angers, France, developing open-source tools for digital
+              phenotyping.
+            </p>
+
+            <div class="hero-cta">
+              <a href="/pages/publication.html" class="btn btn-primary">
+                <i class="fas fa-file-lines" aria-hidden="true"></i>
+                <span data-i18n="nav.publications">Publications</span>
+              </a>
+              <a href="/pages/projects.html" class="btn btn-outline">
+                <i class="fas fa-diagram-project" aria-hidden="true"></i>
+                <span data-i18n="nav.projects">Projects</span>
+              </a>
+              <a href="/curriculumvitae/cv_abdoul_.pdf" class="btn btn-outline" download>
+                <i class="fas fa-download" aria-hidden="true"></i>
+                <span data-i18n="common.downloadCv">Download CV</span>
+              </a>
             </div>
+
+            <div class="hero-links">
+              <a href="https://github.com/djaliloh" target="_blank" rel="noopener" class="hero-link">
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+              </a>
+              <a href="https://scholar.google.com/citations?user=SWrOqf4AAAAJ&amp;hl=en" target="_blank" rel="noopener"
+                class="hero-link">
+                <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar
+              </a>
+              <a href="https://orcid.org/0009-0008-6172-4439" target="_blank" rel="noopener" class="hero-link">
+                <svg class="orcid-icon" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" fill="#a6ce39"
+                  aria-hidden="true" focusable="false">
+                  <circle cx="128" cy="128" r="128" />
+                  <path fill="#fff"
+                    d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h26.3c28.6 0 41.3-20.7 41.3-39.7 0-21.5-14.3-39.6-41.6-39.6h-26v79.3zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.5 10.1 10.1z" />
+                </svg>
+                ORCID
+              </a>
+              <a href="https://www.linkedin.com/in/abdoul-djalil-ousseini-hamza/" target="_blank" rel="noopener"
+                class="hero-link">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+              </a>
+              <a href="mailto:abdouldjalilo@gmail.com" class="hero-link">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <span data-i18n="common.email">Email</span>
+              </a>
+            </div>
+
+            <!-- Key figures, all derived from the pages linked above. -->
+            <div class="stats-row">
+              <div class="stat-item">
+                <span class="stat-number">5</span>
+                <span class="stat-label" data-i18n="home.stats.publications">Publications</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2</span>
+                <span class="stat-label" data-i18n="home.stats.tools">Open-source tools</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">4</span>
+                <span class="stat-label" data-i18n="home.stats.countries">Countries</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">7+</span>
+                <span class="stat-label" data-i18n="home.stats.years">Years in research</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-photo-wrap">
+            <img src="/images/adjalil.jpeg" alt="Portrait of Abdoul Djalil Ousseini Hamza" class="hero-photo"
+              width="220" height="220" fetchpriority="high"
+              data-i18n-attr="alt=home.hero.photoAlt">
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- ── Research Interests ──────────────────────────────────── -->
-    <section class="section" id="interests">
-        <div class="container">
-            <div class="section-header fade-up">
-                <h2 class="section-title">Research Interests</h2>
-                <p class="section-subtitle">Areas where I focus my work and curiosity</p>
-            </div>
-            <div class="interests-grid fade-up">
-                <div class="interest-item">
-                    <span class="interest-icon">🌱</span>
-                    <span class="interest-text">Digital Plant Phenotyping</span>
-                </div>
-                <div class="interest-item">
-                    <span class="interest-icon">🔍</span>
-                    <span class="interest-text">Zero-Shot &amp; Foundation Model Segmentation</span>
-                </div>
-                <div class="interest-item">
-                    <span class="interest-icon">📐</span>
-                    <span class="interest-text">Monocular Depth Estimation</span>
-                </div>
-                <div class="interest-item">
-                    <span class="interest-icon">🤸</span>
-                    <span class="interest-text">Human Action &amp; Fall Detection</span>
-                </div>
-                <div class="interest-item">
-                    <span class="interest-icon">🧠</span>
-                    <span class="interest-text">Transfer Learning &amp; CNNs</span>
-                </div>
-                <div class="interest-item">
-                    <span class="interest-icon">🎯</span>
-                    <span class="interest-text">Object Detection &amp; Tracking</span>
-                </div>
-                <div class="interest-item">
-                    <span class="interest-icon">☁️</span>
-                    <span class="interest-text">3D Point Cloud Processing</span>
-                </div>
-                <div class="interest-item">
-                    <span class="interest-icon">🛡️</span>
-                    <span class="interest-text">Anomaly Detection &amp; Safety</span>
-                </div>
-            </div>
+    <!-- ── Research interests ─────────────────────────────── -->
+    <section class="section" id="interests" aria-labelledby="interests-title">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2 class="section-title" id="interests-title" data-i18n="home.interests.title">Research Interests</h2>
+          <p class="section-subtitle" data-i18n="home.interests.subtitle">Areas where I focus my work and curiosity</p>
         </div>
+        <div class="interests-grid fade-up">
+          <div class="interest-item">
+            <span class="interest-icon" aria-hidden="true">🌱</span>
+            <span class="interest-text" data-i18n="home.interests.phenotyping">Digital Plant Phenotyping</span>
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon" aria-hidden="true">🔍</span>
+            <span class="interest-text" data-i18n="home.interests.zeroShot">Zero-Shot &amp; Foundation Model
+              Segmentation</span>
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon" aria-hidden="true">📐</span>
+            <span class="interest-text" data-i18n="home.interests.depth">Monocular Depth Estimation</span>
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon" aria-hidden="true">🤸</span>
+            <span class="interest-text" data-i18n="home.interests.action">Human Action &amp; Fall Detection</span>
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon" aria-hidden="true">🧠</span>
+            <span class="interest-text" data-i18n="home.interests.transfer">Transfer Learning &amp; CNNs</span>
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon" aria-hidden="true">🎯</span>
+            <span class="interest-text" data-i18n="home.interests.detection">Object Detection &amp; Tracking</span>
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon" aria-hidden="true">☁️</span>
+            <span class="interest-text" data-i18n="home.interests.pointcloud">3D Point Cloud Processing</span>
+          </div>
+          <div class="interest-item">
+            <span class="interest-icon" aria-hidden="true">🛡️</span>
+            <span class="interest-text" data-i18n="home.interests.anomaly">Anomaly Detection &amp; Safety</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- ── Selected Publications ─────────────────────────────── -->
-    <section class="section"
-        style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);"
-        id="publications">
-        <div class="container">
-            <div class="section-header-with-link fade-up">
-                <div>
-                    <h2 class="section-title">Selected Publications</h2>
-                    <p class="section-subtitle" style="margin-bottom:0">Recent research output</p>
-                </div>
-                <a href="/pages/publication.html" class="btn btn-outline">
-                    View all <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-
-            <!-- Pub 1 -->
-            <div class="pub-entry fade-up">
-                <div style="display:flex; align-items:flex-start; gap:.75rem; flex-wrap:wrap; margin-bottom:.5rem;">
-                    <span class="status-badge status-published">Workshop Paper</span>
-                    <span class="tag">ECCV CVPPA 2026</span>
-                </div>
-                <p class="pub-title">
-                    <a href="https://openreview.net/forum?id=Z24CpPVqcU" target="_blank" rel="noopener">
-                        Foreground-Aware Zero-Shot Plant Trait Segmentation in Trellised Crops Using Side-View Monocular
-                        RGB Images
-                    </a>
-                </p>
-                <p class="pub-authors">
-                    <strong>A. D. Ousseini Hamza</strong>, H. Metuarea, C. Lothodé, M. Roth, E. Duchêne, L. Ley, D.
-                    Allétru, D. M. Rousseau
-                </p>
-                <p class="pub-venue">11th Workshop on Computer Vision in Plant Phenotyping and Agriculture (CVPPA), ECCV
-                    2026</p>
-                <div class="pub-links">
-                    <a href="https://openreview.net/forum?id=Z24CpPVqcU" target="_blank" rel="noopener"
-                        class="btn btn-sm btn-outline">
-                        <i class="fas fa-external-link-alt"></i> OpenReview
-                    </a>
-                    <a href="https://pypi.org/project/frontvegV2/" target="_blank" rel="noopener"
-                        class="btn btn-sm btn-outline">
-                        <i class="fas fa-box"></i> PyPI
-                    </a>
-                    <a href="https://napari-hub.org/plugins/frontvegv2.html" target="_blank" rel="noopener"
-                        class="btn btn-sm btn-outline">
-                        <i class="fas fa-plug"></i> Napari Hub
-                    </a>
-                    <!-- <a href="https://github.com/djaliloh/FrontVegV2" target="_blank" rel="noopener"
-                        class="btn btn-sm btn-outline">
-                        <i class="fab fa-github"></i> Code -->
-                    </a>
-                </div>
-            </div>
-
-            <!-- Pub 2 -->
-            <div class="pub-entry fade-up">
-                <div style="display:flex; align-items:flex-start; gap:.75rem; flex-wrap:wrap; margin-bottom:.5rem;">
-                    <span class="status-badge status-review">Under Review</span>
-                    <span class="tag">SoftwareX 2026</span>
-                </div>
-                <p class="pub-title">
-                    FrontVeg V2: An Open-Source Framework for Foreground-Aware Zero-Shot Segmentation of Plant Traits in
-                    Trellised Crops
-                </p>
-                <p class="pub-authors">
-                    <strong>A. D. Ousseini Hamza</strong>, H. Metuarea, C. Lothodé, M. Roth, E. Duchêne, L. Ley, D.
-                    Allétru, D. M. Rousseau
-                </p>
-                <p class="pub-venue">SoftwareX, Elsevier — under review, 2026</p>
-                <div class="pub-links">
-                    <a href="https://github.com/djaliloh/FrontVegV2" target="_blank" rel="noopener"
-                        class="btn btn-sm btn-outline">
-                        <i class="fab fa-github"></i> Code
-                    </a>
-                    <a href="https://napari-hub.org/plugins/frontvegv2.html" target="_blank" rel="noopener"
-                        class="btn btn-sm btn-outline">
-                        <i class="fas fa-plug"></i> Napari Hub
-                    </a>
-                </div>
-            </div>
-
-            <!-- Pub 3 -->
-            <div class="pub-entry fade-up">
-                <div style="display:flex; align-items:flex-start; gap:.75rem; flex-wrap:wrap; margin-bottom:.5rem;">
-                    <span class="status-badge status-preprint">Preprint</span>
-                    <span class="tag">Dataset Paper 2026</span>
-                </div>
-                <p class="pub-title">
-                    <a href="https://doi.org/10.21203/rs.3.rs-8977752/v1" target="_blank" rel="noopener">
-                        DeepPhenoTree – Apple Edition: A Multi-Site Apple Phenology RGB Annotated Dataset with Deep
-                        Learning Baseline Models
-                    </a>
-                </p>
-                <p class="pub-authors">
-                    H. Metuarea, <strong>A. D. Ousseini Hamza</strong>, W. Guerra, F. Zuffa, F. Panzeri, A. Patocchi, L.
-                    Lozano, S. Hoye, F. Laurens, J. Labrosse, P. Rasti, D. Rousseau
-                </p>
-                <p class="pub-venue">Preprint, Research Square, 2026</p>
-                <div class="pub-links">
-                    <a href="https://doi.org/10.21203/rs.3.rs-8977752/v1" target="_blank" rel="noopener"
-                        class="btn btn-sm btn-outline">
-                        <i class="fas fa-external-link-alt"></i> Preprint
-                    </a>
-                    <a href="https://www.codabench.org/competitions/14963/" target="_blank" rel="noopener"
-                        class="btn btn-sm btn-outline">
-                        <i class="fas fa-trophy"></i> Data Challenge
-                    </a>
-                </div>
-            </div>
+    <!-- ── Selected publications ──────────────────────────── -->
+    <section class="section section-alt" id="publications" aria-labelledby="publications-title">
+      <div class="container">
+        <div class="section-header-with-link fade-up">
+          <div>
+            <h2 class="section-title" id="publications-title" data-i18n="home.pubs.title">Selected Publications</h2>
+            <p class="section-subtitle" data-i18n="home.pubs.subtitle">Recent research output</p>
+          </div>
+          <a href="/pages/publication.html" class="btn btn-outline">
+            <span data-i18n="common.viewAll">View all</span>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
+
+        <article class="pub-entry fade-up">
+          <div class="pub-meta">
+            <span class="status-badge status-published" data-i18n="badge.workshop">Workshop Paper</span>
+            <span class="tag">ECCV CVPPA 2026</span>
+          </div>
+          <h3 class="pub-title">
+            <a href="https://openreview.net/forum?id=Z24CpPVqcU" target="_blank" rel="noopener">
+              Foreground-Aware Zero-Shot Plant Trait Segmentation in Trellised Crops Using Side-View Monocular RGB
+              Images
+            </a>
+          </h3>
+          <p class="pub-authors">
+            <strong>A. D. Ousseini Hamza</strong>, H. Metuarea, C. Lothodé, M. Roth, E. Duchêne, L. Ley, D. Allétru,
+            D. M. Rousseau
+          </p>
+          <p class="pub-venue">
+            11th Workshop on Computer Vision in Plant Phenotyping and Agriculture (CVPPA), ECCV 2026
+          </p>
+          <div class="pub-links">
+            <a href="https://openreview.net/forum?id=Z24CpPVqcU" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline">
+              <i class="fas fa-up-right-from-square" aria-hidden="true"></i> OpenReview
+            </a>
+            <a href="https://pypi.org/project/frontvegV2/" target="_blank" rel="noopener" class="btn btn-sm btn-outline">
+              <i class="fas fa-box" aria-hidden="true"></i> PyPI
+            </a>
+            <a href="https://napari-hub.org/plugins/frontvegv2.html" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline">
+              <i class="fas fa-plug" aria-hidden="true"></i> Napari Hub
+            </a>
+          </div>
+        </article>
+
+        <article class="pub-entry fade-up">
+          <div class="pub-meta">
+            <span class="status-badge status-review" data-i18n="badge.underReview">Under Review</span>
+            <span class="tag">SoftwareX 2026</span>
+          </div>
+          <h3 class="pub-title">
+            FrontVeg V2: An Open-Source Framework for Foreground-Aware Zero-Shot Segmentation of Plant Traits in
+            Trellised Crops
+          </h3>
+          <p class="pub-authors">
+            <strong>A. D. Ousseini Hamza</strong>, H. Metuarea, C. Lothodé, M. Roth, E. Duchêne, L. Ley, D. Allétru,
+            D. M. Rousseau
+          </p>
+          <p class="pub-venue">SoftwareX, Elsevier — under review, 2026</p>
+          <div class="pub-links">
+            <a href="https://github.com/djaliloh/FrontVegV2" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <span data-i18n="common.code">Code</span>
+            </a>
+            <a href="https://napari-hub.org/plugins/frontvegv2.html" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline">
+              <i class="fas fa-plug" aria-hidden="true"></i> Napari Hub
+            </a>
+          </div>
+        </article>
+
+        <article class="pub-entry fade-up">
+          <div class="pub-meta">
+            <span class="status-badge status-preprint" data-i18n="badge.preprint">Preprint</span>
+            <span class="tag" data-i18n="badge.dataset">Dataset Paper 2026</span>
+          </div>
+          <h3 class="pub-title">
+            <a href="https://doi.org/10.21203/rs.3.rs-8977752/v1" target="_blank" rel="noopener">
+              DeepPhenoTree – Apple Edition: A Multi-Site Apple Phenology RGB Annotated Dataset with Deep Learning
+              Baseline Models
+            </a>
+          </h3>
+          <p class="pub-authors">
+            H. Metuarea, <strong>A. D. Ousseini Hamza</strong>, W. Guerra, F. Zuffa, F. Panzeri, A. Patocchi, L. Lozano,
+            S. Hoye, F. Laurens, J. Labrosse, P. Rasti, D. Rousseau
+          </p>
+          <p class="pub-venue">Preprint, Research Square, 2026</p>
+          <div class="pub-links">
+            <a href="https://doi.org/10.21203/rs.3.rs-8977752/v1" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline">
+              <i class="fas fa-up-right-from-square" aria-hidden="true"></i>
+              <span data-i18n="common.preprint">Preprint</span>
+            </a>
+            <a href="https://www.codabench.org/competitions/14963/" target="_blank" rel="noopener"
+              class="btn btn-sm btn-outline">
+              <i class="fas fa-trophy" aria-hidden="true"></i>
+              <span data-i18n="common.dataChallenge">Data Challenge</span>
+            </a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- ── Featured Projects ──────────────────────────────────── -->
-    <section class="section" id="projects">
-        <div class="container">
-            <div class="section-header-with-link fade-up">
-                <div>
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle" style="margin-bottom:0">Open-source tools and research software</p>
-                </div>
-                <a href="/pages/projects.html" class="btn btn-outline">
-                    All projects <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-            <div class="grid-3">
-
-                <div class="project-card fade-up">
-                    <div class="project-card-header">
-                        <span class="project-card-icon">🌿</span>
-                        <div class="project-card-links">
-                            <a href="https://github.com/djaliloh/FrontVegV2" target="_blank" rel="noopener"
-                                title="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://pypi.org/project/frontvegV2/" target="_blank" rel="noopener"
-                                title="PyPI"><i class="fas fa-box"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-card-title">FrontVeg V2</h3>
-                    <p class="project-card-period">2026 · INRAE / IRHS</p>
-                    <p class="project-card-desc">
-                        Geometry-aware, training-free framework for zero-shot plant trait segmentation in trellised
-                        crops.
-                        Combines Depth Anything V2 with SAM3 via Valley-Aware Depth Thresholding and Graph-Based Mask
-                        Assembly.
-                        Published on PyPI and available as a Napari plugin.
-                    </p>
-                    <div class="project-card-footer">
-                        <div class="tags">
-                            <span class="tag tag-accent">Python</span>
-                            <span class="tag">SAM3</span>
-                            <span class="tag">Depth Anything</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-up">
-                    <div class="project-card-header">
-                        <span class="project-card-icon">🤸</span>
-                        <div class="project-card-links">
-                            <a href="https://radar.inria.fr/report/2022/stars/index.html#STARS-RA-2022-uid102"
-                                target="_blank" rel="noopener" title="INRIA Report"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-card-title">Fall Detection System</h3>
-                    <p class="project-card-period">2022 – 2023 · INRIA Sophia Antipolis</p>
-                    <p class="project-card-desc">
-                        End-to-end fall detection pipeline for the elderly using skeleton-based action recognition on
-                        untrimmed videos.
-                        Adapted the UNIK framework with MediaPipe Pose on the PKU-MMD dataset, targeting deployment on
-                        embedded Raspberry Pi devices.
-                    </p>
-                    <div class="project-card-footer">
-                        <div class="tags">
-                            <span class="tag tag-accent">Python</span>
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">Raspberry Pi</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card fade-up">
-                    <div class="project-card-header">
-                        <span class="project-card-icon">🍎</span>
-                        <div class="project-card-links">
-                            <a href="https://www.codabench.org/competitions/14963/" target="_blank" rel="noopener"
-                                title="Codabench"><i class="fas fa-trophy"></i></a>
-                        </div>
-                    </div>
-                    <h3 class="project-card-title">DeepPhenoTree Challenge</h3>
-                    <p class="project-card-period">Apr – Jul 2026 · INRAE / IRHS</p>
-                    <p class="project-card-desc">
-                        Co-organised a public benchmark on Codabench for apple phenological stage detection across four
-                        European orchard sites.
-                        Challenge covers 48,320 images and three BBCH phenological stages under real open-field
-                        conditions.
-                    </p>
-                    <div class="project-card-footer">
-                        <div class="tags">
-                            <span class="tag tag-accent">Object Detection</span>
-                            <span class="tag">RT-DETR</span>
-                            <span class="tag">YOLO</span>
-                            <span class="tag">Phenotyping</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <!-- ── Featured projects ──────────────────────────────── -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header-with-link fade-up">
+          <div>
+            <h2 class="section-title" id="projects-title" data-i18n="home.projects.title">Featured Projects</h2>
+            <p class="section-subtitle" data-i18n="home.projects.subtitle">Open-source tools and research software</p>
+          </div>
+          <a href="/pages/projects.html" class="btn btn-outline">
+            <span data-i18n="common.allProjects">All projects</span>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
+
+        <div class="grid-3">
+
+          <article class="project-card fade-up">
+            <div class="project-card-header">
+              <span class="project-card-icon" aria-hidden="true">🌿</span>
+              <div class="project-card-links">
+                <a href="https://github.com/djaliloh/FrontVegV2" target="_blank" rel="noopener"
+                  aria-label="FrontVeg V2 on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://pypi.org/project/frontvegV2/" target="_blank" rel="noopener"
+                  aria-label="FrontVeg V2 on PyPI"><i class="fas fa-box" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <h3 class="project-card-title">FrontVeg V2</h3>
+            <p class="project-card-period">2026 · INRAE / IRHS</p>
+            <p class="project-card-desc" data-i18n="home.projects.frontveg.desc">
+              Geometry-aware, training-free framework for zero-shot plant trait segmentation in trellised crops.
+              Combines Depth Anything V2 with SAM3 through Valley-Aware Depth Thresholding and Graph-Based Mask
+              Assembly. Published on PyPI and available as a Napari plugin.
+            </p>
+            <div class="project-card-footer">
+              <div class="tags">
+                <span class="tag tag-accent">Python</span>
+                <span class="tag">SAM3</span>
+                <span class="tag">Depth Anything</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-up">
+            <div class="project-card-header">
+              <span class="project-card-icon" aria-hidden="true">🤸</span>
+              <div class="project-card-links">
+                <a href="https://radar.inria.fr/report/2022/stars/index.html#STARS-RA-2022-uid102" target="_blank"
+                  rel="noopener" aria-label="INRIA activity report"><i class="fas fa-up-right-from-square"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <h3 class="project-card-title" data-i18n="home.projects.fall.title">Fall Detection System</h3>
+            <p class="project-card-period">2022 – 2023 · INRIA Sophia Antipolis</p>
+            <p class="project-card-desc" data-i18n="home.projects.fall.desc">
+              End-to-end fall detection pipeline for elderly people, using skeleton-based action recognition on
+              untrimmed videos. Adapts the UNIK framework with MediaPipe Pose on the PKU-MMD dataset, targeting
+              deployment on embedded Raspberry Pi devices.
+            </p>
+            <div class="project-card-footer">
+              <div class="tags">
+                <span class="tag tag-accent">Python</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">Raspberry Pi</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-up">
+            <div class="project-card-header">
+              <span class="project-card-icon" aria-hidden="true">🍎</span>
+              <div class="project-card-links">
+                <a href="https://www.codabench.org/competitions/14963/" target="_blank" rel="noopener"
+                  aria-label="DeepPhenoTree challenge on Codabench"><i class="fas fa-trophy"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <h3 class="project-card-title">DeepPhenoTree Challenge</h3>
+            <p class="project-card-period" data-i18n="home.projects.dpt.period">Apr – Jul 2026 · INRAE / IRHS</p>
+            <p class="project-card-desc" data-i18n="home.projects.dpt.desc">
+              Co-organised a public benchmark on Codabench for apple phenological stage detection across four
+              European orchard sites. The challenge covers 48,320 images and three BBCH phenological stages under
+              real open-field conditions.
+            </p>
+            <div class="project-card-footer">
+              <div class="tags">
+                <span class="tag tag-accent" data-i18n="tag.objectDetection">Object Detection</span>
+                <span class="tag">RT-DETR</span>
+                <span class="tag">YOLO</span>
+                <span class="tag" data-i18n="tag.phenotyping">Phenotyping</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
 
-    <!-- ── Teaching ───────────────────────────────────────────── -->
-    <section class="section"
-        style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);"
-        id="teaching">
-        <div class="container">
-            <div class="section-header-with-link fade-up">
-                <div>
-                    <h2 class="section-title">Teaching &amp; Training</h2>
-                    <p class="section-subtitle" style="margin-bottom:0">Courses and workshops delivered at INRAE</p>
-                </div>
-                <a href="/pages/teaching.html" class="btn btn-outline">
-                    Details <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-            <div class="grid-2 fade-up">
-                <div class="card">
-                    <div class="card-icon">🐳</div>
-                    <h3 class="card-title">Best Coding Practices</h3>
-                    <p class="card-meta">INRAE / IRHS · 2026</p>
-                    <p class="card-desc">
-                        Lecture and practical course on software engineering for researchers: Docker containerisation,
-                        automated testing, and GitLab CI/CD pipelines.
-                    </p>
-                    <div class="tags">
-                        <span class="tag">Docker</span>
-                        <span class="tag">GitLab CI/CD</span>
-                        <span class="tag">Flask</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🧠</div>
-                    <h3 class="card-title">Deep Learning for Image Classification</h3>
-                    <p class="card-meta">INRAE Staff Training · March 2026</p>
-                    <p class="card-desc">
-                        Three-day hands-on training covering transfer learning with ResNet and VGG architectures for
-                        image classification tasks.
-                    </p>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">PyTorch</span>
-                        <span class="tag">Transfer Learning</span>
-                    </div>
-                </div>
-            </div>
+    <!-- ── Teaching ───────────────────────────────────────── -->
+    <section class="section section-alt" id="teaching" aria-labelledby="teaching-title">
+      <div class="container">
+        <div class="section-header-with-link fade-up">
+          <div>
+            <h2 class="section-title" id="teaching-title" data-i18n="home.teaching.title">Teaching &amp; Training</h2>
+            <p class="section-subtitle" data-i18n="home.teaching.subtitle">Courses and workshops delivered at INRAE</p>
+          </div>
+          <a href="/pages/teaching.html" class="btn btn-outline">
+            <span data-i18n="common.details">Details</span>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
+        <div class="grid-2 fade-up">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🐳</div>
+            <h3 class="card-title" data-i18n="home.teaching.coding.title">Best Coding Practices</h3>
+            <p class="card-meta">INRAE / IRHS · 2026</p>
+            <p class="card-desc" data-i18n="home.teaching.coding.desc">
+              Lecture and practical course on software engineering for researchers: Docker containerisation,
+              automated testing and GitLab CI/CD pipelines.
+            </p>
+            <div class="tags">
+              <span class="tag">Docker</span>
+              <span class="tag">GitLab CI/CD</span>
+              <span class="tag">Flask</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🧠</div>
+            <h3 class="card-title" data-i18n="home.teaching.dl.title">Deep Learning for Image Classification</h3>
+            <p class="card-meta" data-i18n="home.teaching.dl.meta">INRAE Staff Training · March 2026</p>
+            <p class="card-desc" data-i18n="home.teaching.dl.desc">
+              Three-day hands-on training covering transfer learning with ResNet and VGG architectures for image
+              classification tasks.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag" data-i18n="tag.transferLearning">Transfer Learning</span>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- ── Footer ────────────────────────────────────────────── -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="footer-left">
-                <p><strong>Abdoul Djalil Ousseini Hamza</strong></p>
-                <p>Research Engineer · INRAE / IRHS · Angers, France</p>
-                <p>&copy; <span id="year"></span>. Built with HTML &amp; CSS.</p>
-            </div>
-            <div class="footer-links">
-                <a href="https://github.com/djaliloh" target="_blank" rel="noopener">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://scholar.google.com/citations?user=SWrOqf4AAAAJ&hl=en" target="_blank" rel="noopener">
-                    <i class="fas fa-graduation-cap"></i> Scholar
-                </a>
-                <a href="https://orcid.org/0009-0008-6172-4439" target="_blank" rel="noopener">
-                    <svg width="14" height="14" viewBox="0 0 256 256" fill="#a6ce39">
-                        <circle cx="128" cy="128" r="128" />
-                        <path fill="#fff"
-                            d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h26.3c28.6 0 41.3-20.7 41.3-39.7 0-21.5-14.3-39.6-41.6-39.6h-26v79.3zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.5 10.1 10.1z" />
-                    </svg>
-                    ORCID
-                </a>
-                <a href="https://www.linkedin.com/in/hamza-abdouldjalilo/" target="_blank" rel="noopener">
-                    <i class="fab fa-linkedin-in"></i> LinkedIn
-                </a>
-                <a href="https://x.com/djaliloh" target="_blank" rel="noopener">
-                    <i class="fab fa-x-twitter"></i> X
-                </a>
-                <a href="mailto:abdouldjalilo@gmail.com">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-            </div>
+    <!-- ── Contact ────────────────────────────────────────── -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-cta fade-up">
+          <h2 class="section-title" id="contact-title" data-i18n="home.contact.title">Get in touch</h2>
+          <p data-i18n="home.contact.text">
+            Interested in plant phenotyping, zero-shot segmentation or embedded vision? I am always happy to discuss
+            research collaborations, open-source contributions and teaching opportunities.
+          </p>
+          <div class="hero-cta">
+            <a href="mailto:abdouldjalilo@gmail.com" class="btn btn-primary">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <span data-i18n="home.contact.emailCta">Send an email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/abdoul-djalil-ousseini-hamza/" target="_blank" rel="noopener"
+              class="btn btn-outline">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+            </a>
+            <a href="https://github.com/djaliloh" target="_blank" rel="noopener" class="btn btn-outline">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script>
-        // Year
-        document.getElementById('year').textContent = new Date().getFullYear();
+  </main>
 
-        // Dark mode toggle
-        const toggle = document.getElementById('themeToggle');
-        const icon = document.getElementById('themeIcon');
-        const html = document.documentElement;
-        const saved = localStorage.getItem('theme') || 'light';
-        html.setAttribute('data-theme', saved);
-        icon.className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p><strong>Abdoul Djalil Ousseini Hamza</strong></p>
+        <p data-i18n="footer.role">Research Engineer · INRAE / IRHS · Angers, France</p>
+        <p>&copy; <span data-year>2026</span> · <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+      <nav class="footer-links" data-i18n-attr="aria-label=a11y.footerNav" aria-label="Profiles and contact">
+        <a href="https://github.com/djaliloh" target="_blank" rel="noopener">
+          <i class="fab fa-github" aria-hidden="true"></i> GitHub
+        </a>
+        <a href="https://scholar.google.com/citations?user=SWrOqf4AAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <i class="fas fa-graduation-cap" aria-hidden="true"></i> Scholar
+        </a>
+        <a href="https://orcid.org/0009-0008-6172-4439" target="_blank" rel="noopener">
+          <svg class="orcid-icon" viewBox="0 0 256 256" fill="#a6ce39" aria-hidden="true" focusable="false">
+            <circle cx="128" cy="128" r="128" />
+            <path fill="#fff"
+              d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h26.3c28.6 0 41.3-20.7 41.3-39.7 0-21.5-14.3-39.6-41.6-39.6h-26v79.3zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.5 10.1 10.1z" />
+          </svg>
+          ORCID
+        </a>
+        <a href="https://www.linkedin.com/in/abdoul-djalil-ousseini-hamza/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+        </a>
+        <a href="https://x.com/djaliloh" target="_blank" rel="noopener">
+          <i class="fab fa-x-twitter" aria-hidden="true"></i> X
+        </a>
+        <a href="mailto:abdouldjalilo@gmail.com">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <span data-i18n="common.email">Email</span>
+        </a>
+      </nav>
+    </div>
+  </footer>
 
-        toggle.addEventListener('click', () => {
-            const current = html.getAttribute('data-theme');
-            const next = current === 'dark' ? 'light' : 'dark';
-            html.setAttribute('data-theme', next);
-            localStorage.setItem('theme', next);
-            icon.className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-        });
-
-        // Hamburger
-        const hamburger = document.getElementById('hamburger');
-        const drawer = document.getElementById('navDrawer');
-        hamburger.addEventListener('click', () => {
-            const open = drawer.classList.toggle('open');
-            hamburger.classList.toggle('open', open);
-            hamburger.setAttribute('aria-expanded', open);
-        });
-
-        // Fade-up on scroll
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-    </script>
 </body>
 
 </html>

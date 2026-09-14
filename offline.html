@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title data-i18n="meta.offline.title">Offline — Abdoul Djalil Ousseini Hamza</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) { /* private mode: keep the default */ }
+    })();
+  </script>
+  <script type="module" src="/assets/js/app.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav" data-i18n-attr="aria-label=a11y.mainNav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="/index.html" class="nav-logo">A.D. Ousseini Hamza</a>
+        <div class="nav-right">
+          <div data-lang-switch></div>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+            <i class="fas fa-moon" data-theme-icon aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="container section">
+      <div class="notes-placeholder">
+        <div class="notes-placeholder-icon" aria-hidden="true">📡</div>
+        <h1 class="section-title" data-i18n="offline.title">You are offline</h1>
+        <p data-i18n="offline.text">
+          This page has not been saved for offline reading. Reconnect and try again — pages you have already
+          visited stay available without a connection.
+        </p>
+        <div class="hero-cta" style="justify-content:center; margin-top:var(--space-8)">
+          <button type="button" class="btn btn-primary" onclick="window.location.reload()">
+            <i class="fas fa-rotate-right" aria-hidden="true"></i>
+            <span data-i18n="offline.retry">Try again</span>
+          </button>
+          <a href="/index.html" class="btn btn-outline">
+            <i class="fas fa-house" aria-hidden="true"></i>
+            <span data-i18n="notFound.home">Back to home</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
